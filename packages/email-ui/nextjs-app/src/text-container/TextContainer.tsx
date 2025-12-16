@@ -1,0 +1,50 @@
+import { Section } from '@react-email/components'
+import { RichText, types } from 'react-bricks/rsc'
+
+import {
+  emailBackgroundColorsEditProps,
+  EmailLayoutProps,
+} from '../LayoutSideProps'
+
+//=============================
+// Local Types
+//=============================
+
+interface TextContainerProps extends EmailLayoutProps {
+  text: types.TextValue
+}
+
+//=============================
+// Component to be rendered
+//=============================
+const TextContainer: types.Brick<TextContainerProps> = ({
+  text,
+  backgroundColor,
+}) => {
+  return (
+    <Section className={`max-w-full ${backgroundColor?.className}`}>
+      <RichText
+        propName="text"
+        value={text}
+        renderBlock={(props) => <p className="">{props.children}</p>}
+        renderPlaceholder={(props) => (
+          <span className="opacity-30">{props.children}</span>
+        )}
+        placeholder="Type a text..."
+      />
+    </Section>
+  )
+}
+
+//=============================
+// Brick Schema
+//=============================
+TextContainer.schema = {
+  name: 'email-text-container',
+  label: 'Email text container',
+
+  getDefaultProps: () => ({}),
+  sideEditProps: [emailBackgroundColorsEditProps],
+}
+
+export default TextContainer

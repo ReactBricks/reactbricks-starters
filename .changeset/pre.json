@@ -1,0 +1,27 @@
+{
+  "mode": "pre",
+  "tag": "alpha",
+  "initialVersions": {
+    "@reactbricks/astro": "0.0.1-alpha.2",
+    "@reactbricks/nextjs-app": "0.0.1-alpha.1",
+    "@reactbricks/nextjs-pages": "0.0.1-alpha.1",
+    "@reactbricks/email-ui-astro": "0.1.0-alpha.1",
+    "@reactbricks/email-ui-rsc": "0.1.0-alpha.1",
+    "@reactbricks/email-ui": "0.1.0-alpha.1",
+    "@reactbricks/reactbricks-ui-tailwind-config": "0.1.0-alpha.2",
+    "@reactbricks/reactbricks-ui-astro": "0.1.0-alpha.2",
+    "@reactbricks/reactbricks-ui-rsc": "0.1.0-alpha.1",
+    "@reactbricks/reactbricks-ui": "0.1.0-alpha.1",
+    "@reactbricks/sitebricks-ui-tailwind-config": "0.0.0",
+    "@reactbricks/sitebricks-ui-astro": "0.0.1",
+    "@reactbricks/sitebricks-ui-rsc": "0.0.1",
+    "@reactbricks/sitebricks-ui": "0.0.1"
+  },
+  "changesets": [
+    "all-adults-fly",
+    "clean-wings-decide",
+    "empty-suns-look",
+    "perky-singers-report",
+    "twelve-rivers-drop"
+  ]
+}

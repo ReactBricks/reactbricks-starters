@@ -1,0 +1,59 @@
+{
+  "name": "@reactbricks/reactbricks-ui-astro",
+  "license": "UNLICENSED",
+  "authors": [
+    "Dario Ronzoni <dario@reactbricks.com>"
+  ],
+  "version": "0.1.0-alpha.4",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./src/index.ts",
+  "typings": "src/index.ts",
+  "files": [
+    "src",
+    "styles"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "import": "./src/index.ts"
+    },
+    "./styles.css": "./styles/global.css"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src --max-warnings 0"
+  },
+  "peerDependencies": {
+    "astro": "^5.6.1",
+    "react": "^19",
+    "react-bricks": "^5.0.0-alpha.6",
+    "react-dom": "^19"
+  },
+  "dependencies": {
+    "@reactbricks/reactbricks-ui-tailwind-config": "workspace:*",
+    "classnames": "^2.5.1",
+    "dayjs": "^1.11.13",
+    "email-validator": "^2.0.4",
+    "jsonp": "^0.2.1",
+    "react-hook-form": "^7.54.2",
+    "react-icons": "^5.5.0",
+    "react-slick": "^0.30.3",
+    "react-google-recaptcha-v3": "^1.11.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "@types/jsonp": "^0.2.3",
+    "@types/node": "^20",
+    "@types/prismjs": "^1.26.5",
+    "@types/react": "19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@types/react-slick": "^0.23.13",
+    "eslint": "^9.22.0",
+    "eslint-config-next": "15.2.2",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.14",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,120 @@
+---
+import PostListItem from '@/components/PostListItem.astro'
+import TagListItem from '@/components/TagListItem.astro'
+import { locales } from '@/i18n/conf'
+import { getLocaleUrl } from '@/i18n/util'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { reactBricksAstroStore } from 'react-bricks/astro'
+import { fetchPages, fetchTags } from 'react-bricks/astro/server'
+
+const config = reactBricksAstroStore.getConfig()
+
+export async function getStaticPaths() {
+  const config = reactBricksAstroStore.getConfig()
+
+  const tagsPromises = locales.map((lang) =>
+    fetchTags(config.apiKey, 1, 20, {
+      language: lang,
+    }).then((res) => ({
+      tags: res.items,
+      lang,
+    }))
+  )
+
+  const tagsLanguages = await Promise.all(tagsPromises)
+
+  const paths = tagsLanguages
+    .map(({ tags, lang }) =>
+      tags.map((tag) => ({
+        params: {
+          lang,
+          tag,
+        },
+      }))
+    )
+    .flat()
+    .filter((path) => locales.includes(path.params.lang))
+
+  return paths
+}
+
+const { lang, tag } = Astro.params
+
+const [posts, tagsResult] = await Promise.all([
+  fetchPages(config.apiKey, {
+    language: lang,
+    tag: tag.toString(),
+    type: 'blog',
+    pageSize: 100,
+    sort: '-publishedAt',
+  }),
+  fetchTags(config.apiKey, 1, 20, {
+    language: lang,
+  }),
+])
+
+const tags = tagsResult.items.sort()
+
+if (!tags.includes(tag)) {
+  return new Response('Not Found', { status: 404 })
+}
+---
+
+<BaseLayout lang={lang}>
+  <Fragment slot="head">
+    <title>{tag} articles</title>
+    <meta name="description" content={tag} />
+  </Fragment>
+
+  <style>
+    h2 + p {
+      margin-top: 0 !important;
+    }
+    h3 + p {
+      margin-top: 0 !important;
+    }
+  </style>
+
+  <div class="bg-white dark:bg-gray-900">
+    <div class="max-w-6xl mx-auto px-8 py-16">
+      <div
+        class="flex items-center justify-between text-gray-900 dark:text-white pb-4 mt-10 sm:mt-12 mb-4"
+      >
+        <h1
+          class="max-w-2xl text-4xl sm:text-6xl lg:text-4xl font-bold tracking-tight"
+        >
+          {tag} articles
+        </h1>
+
+        <a
+          href={getLocaleUrl(lang, '/blog')}
+          class="hover:-translate-x-2 transition-transform duration-300"
+        >
+          &laquo; Return to blog
+        </a>
+      </div>
+
+      <div class="flex flex-wrap items-center">
+        {tags?.map((tag) => <TagListItem tag={tag} lang={lang} />)}
+      </div>
+
+      <hr class="mt-6 mb-10 dark:border-gray-600" />
+
+      <div class="grid lg:grid-cols-2 xl:grid-cols-3 sm:gap-12">
+        {
+          posts?.map((post) => (
+            <PostListItem
+              title={post.meta.title || ''}
+              slug={post.slug}
+              lang={lang}
+              content={post.meta.description || ''}
+              author={post.author}
+              date={post.publishedAt || ''}
+              featuredImg={post.meta.image}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</BaseLayout>

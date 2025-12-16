@@ -1,0 +1,71 @@
+---
+import { locales } from '@/i18n/conf'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { getBricks, reactBricksAstroStore } from 'react-bricks/astro'
+import PageViewer from 'react-bricks/astro/PageViewer.astro'
+import { cleanPage, fetchPage, fetchPages } from 'react-bricks/astro/server'
+
+const config = reactBricksAstroStore.getConfig()
+
+export async function getStaticPaths() {
+  const config = reactBricksAstroStore.getConfig()
+
+  const allPages = await fetchPages(config.apiKey, {
+    type: 'blog',
+    pageSize: 100,
+    sort: '-publishedAt',
+  })
+
+  const paths = allPages
+    .map((page) =>
+      page.translations.map((translation) => ({
+        params: {
+          lang: translation.language,
+          slug: translation.slug,
+        },
+      }))
+    )
+    .flat()
+    .filter((path) => locales.includes(path.params.lang))
+
+  return paths
+}
+
+const { lang, slug = '/' } = Astro.params
+
+const page = await fetchPage({
+  slug: slug,
+  language: lang,
+  config,
+})
+
+// Clean the received content
+// Removes unknown or not allowed bricks
+const bricks = getBricks()
+const pageOk = page ? cleanPage(page, config.pageTypes || [], bricks) : null
+
+if (!pageOk) {
+  return new Response('Not Found', { status: 404 })
+}
+---
+
+<BaseLayout lang={lang}>
+  <Fragment slot="head">
+    <title>{pageOk?.meta.title || ''}</title>
+    <meta
+      name="description"
+      content={pageOk?.meta.description || pageOk?.meta.title || ''}
+    />
+  </Fragment>
+
+  <style>
+    h2 + p {
+      margin-top: 0 !important;
+    }
+    h3 + p {
+      margin-top: 0 !important;
+    }
+  </style>
+
+  <PageViewer page={pageOk} main />
+</BaseLayout>

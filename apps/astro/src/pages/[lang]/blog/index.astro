@@ -1,0 +1,77 @@
+---
+import PostListItem from '@/components/PostListItem.astro'
+import TagListItem from '@/components/TagListItem.astro'
+import { locales } from '@/i18n/conf'
+import BaseLayout from '@/layouts/BaseLayout.astro'
+import { reactBricksAstroStore } from 'react-bricks/astro'
+import { fetchPages, fetchTags } from 'react-bricks/astro/server'
+
+const config = reactBricksAstroStore.getConfig()
+
+export async function getStaticPaths() {
+  const paths = locales.map((lang) => ({
+    params: {
+      lang,
+    },
+  }))
+
+  return paths
+}
+
+const { lang } = Astro.params
+
+const [posts, tagsResult] = await Promise.all([
+  fetchPages(config.apiKey, {
+    language: lang,
+    type: 'blog',
+    pageSize: 1000,
+    sort: '-publishedAt',
+  }),
+  fetchTags(config.apiKey, 1, 20, {
+    language: lang,
+  }),
+])
+
+const tags = tagsResult.items.sort()
+---
+
+<BaseLayout lang={lang}>
+  <Fragment slot="head">
+    <title>Post List</title>
+    <meta name="description" content="React Bricks Blog starter" />
+  </Fragment>
+
+  <div class="bg-white dark:bg-gray-900">
+    <div class="max-w-6xl mx-auto px-8 py-16">
+      <h1
+        class="max-w-2xl text-4xl sm:text-6xl lg:text-4xl font-bold tracking-tight text-gray-900 dark:text-white pb-4 mt-10 sm:mt-12 mb-4"
+      >
+        Our latest articles
+      </h1>
+
+      <div class="flex flex-wrap items-center">
+        {tags?.map((tag) => <TagListItem tag={tag} lang={lang} />)}
+      </div>
+
+      <hr class="mt-6 mb-10 dark:border-gray-600" />
+
+      <div class="grid lg:grid-cols-2 xl:grid-cols-3 sm:gap-12">
+        {
+          posts?.map((post) => {
+            return (
+              <PostListItem
+                title={post.meta.title || ''}
+                slug={post.slug}
+                lang={lang}
+                content={post.meta.description || ''}
+                author={post.author}
+                date={post.publishedAt || ''}
+                featuredImg={post.meta.image}
+              />
+            )
+          })
+        }
+      </div>
+    </div>
+  </div>
+</BaseLayout>

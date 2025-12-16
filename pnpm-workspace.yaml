@@ -1,0 +1,6 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+  - "packages/email-ui/*"
+  - "packages/reactbricks-ui/*"
+  - "packages/sitebricks-ui/*"
