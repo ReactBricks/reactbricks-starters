@@ -1,5 +1,11 @@
 # @reactbricks/reactbricks-ui-astro
 
+## 0.1.0-alpha.5
+
+### Minor Changes
+
+- Pass config to fetch forms
+
 ## 0.1.0-alpha.4
 
 ### Patch Changes
