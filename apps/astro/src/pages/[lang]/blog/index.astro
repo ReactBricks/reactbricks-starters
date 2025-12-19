@@ -21,15 +21,14 @@ export async function getStaticPaths() {
 const { lang } = Astro.params
 
 const [posts, tagsResult] = await Promise.all([
-  fetchPages(config.apiKey, {
+  fetchPages({
     language: lang,
     type: 'blog',
     pageSize: 1000,
     sort: '-publishedAt',
+    config,
   }),
-  fetchTags(config.apiKey, 1, 20, {
-    language: lang,
-  }),
+  fetchTags({ page: 1, pageSize: 20, filterBy: { language: lang }, config }),
 ])
 
 const tags = tagsResult.items.sort()

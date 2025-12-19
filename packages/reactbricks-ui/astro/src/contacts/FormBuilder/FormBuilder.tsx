@@ -1,17 +1,18 @@
 // import { useSubmit } from '@formspree/react'
 import classNames from 'classnames'
 import {
-  Repeater,
-  types,
-  sendFormSubmission,
-  useReactBricksContext,
   fetchForms,
+  reactBricksAstroStore,
+  Repeater,
+  sendFormSubmission,
+  types,
+  useReactBricksContext,
 } from 'react-bricks/astro'
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
 import { useForm } from 'react-hook-form'
 import blockNames from '../../blockNames'
 import { buttonColors } from '../../colors'
 import { LayoutProps } from '../../LayoutSideProps'
-import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
 import {
   createSubmissionError,
   FormSubmissionError,
@@ -79,6 +80,7 @@ const FormBuilder: types.Brick<FormBuilderProps> = ({
           formId,
           emailAddress: email,
           data,
+          fetchOptions: { apiPrefix: rbContext.apiPrefix },
         })
       } catch (err) {
         throw createSubmissionError(
@@ -238,7 +240,8 @@ FormBuilder.schema = {
           selectOptions: {
             display: types.OptionsDisplay.Select,
             getOptions: async () => {
-              const items = await fetchForms()
+              const apiPrefix = reactBricksAstroStore.getConfig().apiPrefix
+              const items = await fetchForms({ apiPrefix })
 
               return [
                 { value: '', label: '--Select Form--' },

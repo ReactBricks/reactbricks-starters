@@ -2,6 +2,7 @@ import classNames from 'classnames'
 import {
   fetchForms,
   Link,
+  reactBricksAstroStore,
   RichText,
   sendFormSubmission,
   Text,
@@ -9,6 +10,11 @@ import {
   useAdminContext,
   useReactBricksContext,
 } from 'react-bricks/astro'
+import {
+  GoogleReCaptchaProvider,
+  useGoogleReCaptcha,
+} from 'react-google-recaptcha-v3'
+import { useForm } from 'react-hook-form'
 import type { LayoutProps } from '../../LayoutSideProps'
 import {
   backgroundColorsEditProps,
@@ -18,17 +24,12 @@ import {
 } from '../../LayoutSideProps'
 import blockNames from '../../blockNames'
 import { gradients, textColors } from '../../colors'
-import Container from '../../shared/components/Container'
-import Section from '../../shared/components/Section'
-import {
-  GoogleReCaptchaProvider,
-  useGoogleReCaptcha,
-} from 'react-google-recaptcha-v3'
-import { useForm } from 'react-hook-form'
 import {
   createSubmissionError,
   FormSubmissionError,
 } from '../../shared/FormNewsletter/NewsletterUtils'
+import Container from '../../shared/components/Container'
+import Section from '../../shared/components/Section'
 
 export interface CallToActionProps extends LayoutProps {
   textGradient: keyof typeof gradients
@@ -93,6 +94,7 @@ const NewsletterHeroForm: React.FC<{
           formId,
           emailAddress: email,
           data,
+          fetchOptions: { apiPrefix: rbContext.apiPrefix },
         })
       } catch (err) {
         throw createSubmissionError(
@@ -401,7 +403,8 @@ CallToAction.schema = {
           selectOptions: {
             display: types.OptionsDisplay.Select,
             getOptions: async () => {
-              const items = await fetchForms()
+              const apiPrefix = reactBricksAstroStore.getConfig().apiPrefix
+              const items = await fetchForms({ apiPrefix })
 
               return [
                 { value: '', label: '--Select Form--' },

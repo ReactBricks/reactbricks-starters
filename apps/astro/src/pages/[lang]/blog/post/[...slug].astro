@@ -10,10 +10,11 @@ const config = reactBricksAstroStore.getConfig()
 export async function getStaticPaths() {
   const config = reactBricksAstroStore.getConfig()
 
-  const allPages = await fetchPages(config.apiKey, {
+  const allPages = await fetchPages({
     type: 'blog',
     pageSize: 100,
     sort: '-publishedAt',
+    config,
   })
 
   const paths = allPages

@@ -2,6 +2,7 @@ import classNames from 'classnames'
 import React from 'react'
 import {
   fetchForms,
+  reactBricksAstroStore,
   RichText,
   sendFormSubmission,
   Text,
@@ -9,6 +10,11 @@ import {
   useAdminContext,
   useReactBricksContext,
 } from 'react-bricks/astro'
+import {
+  GoogleReCaptchaProvider,
+  useGoogleReCaptcha,
+} from 'react-google-recaptcha-v3'
+import { useForm } from 'react-hook-form'
 import blockNames from '../../blockNames'
 import { textColors } from '../../colors'
 import type { LayoutProps } from '../../LayoutSideProps'
@@ -19,11 +25,6 @@ import {
 } from '../../LayoutSideProps'
 import Container from '../../shared/components/Container'
 import Section from '../../shared/components/Section'
-import {
-  GoogleReCaptchaProvider,
-  useGoogleReCaptcha,
-} from 'react-google-recaptcha-v3'
-import { useForm } from 'react-hook-form'
 import {
   createSubmissionError,
   FormSubmissionError,
@@ -83,6 +84,7 @@ const NewsletterSubscribeForm: React.FC<{
           formId,
           emailAddress: email,
           data,
+          fetchOptions: { apiPrefix: rbContext.apiPrefix },
         })
       } catch (err) {
         throw createSubmissionError(
@@ -324,7 +326,8 @@ Newsletter.schema = {
           selectOptions: {
             display: types.OptionsDisplay.Select,
             getOptions: async () => {
-              const items = await fetchForms()
+              const apiPrefix = reactBricksAstroStore.getConfig().apiPrefix
+              const items = await fetchForms({ apiPrefix })
 
               return [
                 { value: '', label: '--Select Form--' },
