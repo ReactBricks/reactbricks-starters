@@ -90,6 +90,7 @@ const FormBuilderClient: React.FC<FormBuilderClientProps> = ({
           formId,
           emailAddress: email,
           data,
+          fetchOptions: { apiPrefix: rbContext.apiPrefix },
         })
       } catch (err) {
         throw createSubmissionError(

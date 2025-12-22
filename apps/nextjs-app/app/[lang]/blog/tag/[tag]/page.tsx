@@ -42,8 +42,16 @@ const getData = async (
       errorPage = true
       return null
     }),
-    fetchTags(config.apiKey, undefined, undefined, undefined, {
-      next: { revalidate: 3 },
+    fetchTags({
+      page: undefined,
+      pageSize: undefined,
+      filterBy: undefined,
+      fetchOptions: {
+        next: {
+          revalidate: 3,
+        },
+      },
+      config,
     }),
   ])
 
@@ -64,8 +72,13 @@ export async function generateStaticParams({
     return []
   }
 
-  const { items: tags } = await fetchTags(config.apiKey, undefined, undefined, {
-    language: params.lang,
+  const { items: tags } = await fetchTags({
+    page: undefined,
+    pageSize: undefined,
+    filterBy: {
+      language: params.lang,
+    },
+    config,
   })
 
   return tags

@@ -109,13 +109,14 @@ export const getStaticProps: GetStaticProps = async (context) => {
     return { props: { errorNoKeys } }
   }
   try {
-    const { items: tags } = await fetchTags(config.apiKey)
+    const { items: tags } = await fetchTags({ config })
     tags.sort()
 
-    const posts = await fetchPages(config.apiKey, {
+    const posts = await fetchPages({
       type: 'blog',
       pageSize: 1000,
       sort: '-publishedAt',
+      config,
     })
 
     header = await fetchPage({

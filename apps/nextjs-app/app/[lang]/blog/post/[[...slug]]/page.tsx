@@ -72,11 +72,12 @@ export async function generateStaticParams({
     return []
   }
 
-  const allPages = await fetchPages(config.apiKey, {
+  const allPages = await fetchPages({
     language: params.lang,
     type: 'blog',
     pageSize: 100,
     sort: '-publishedAt',
+    config,
   })
 
   const pages = allPages

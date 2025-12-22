@@ -86,6 +86,7 @@ const NewsletterSubscribeForm: React.FC<{
           formId,
           emailAddress: email,
           data,
+          fetchOptions: { apiPrefix: rbContext.apiPrefix },
         })
       } catch (err) {
         throw createSubmissionError(

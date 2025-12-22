@@ -4,6 +4,7 @@ import blockNames from '../../blockNames'
 import { buttonColors } from '../../colors'
 import FormBuilderClient from './FormBuilderClient'
 import FormBuilderProvider from './FormBuilderProvider'
+import { useReactBricksContext } from 'react-bricks/rsc/client'
 
 export interface FormBuilderProps {
   successMessage: string
@@ -86,8 +87,8 @@ FormBuilder.schema = {
           selectOptions: {
             display: types.OptionsDisplay.Select,
             getOptions: async () => {
-              const items = await fetchForms()
-
+              const apiPrefix = useReactBricksContext().apiPrefix
+              const items = await fetchForms({ apiPrefix })
               return [
                 { value: '', label: '--Select Form--' },
                 ...items.map((item) => ({

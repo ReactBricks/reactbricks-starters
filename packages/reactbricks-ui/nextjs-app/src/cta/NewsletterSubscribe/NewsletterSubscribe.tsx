@@ -1,5 +1,8 @@
 import { fetchForms, types, wrapClientComponent } from 'react-bricks/rsc'
-import { RegisterComponent } from 'react-bricks/rsc/client'
+import {
+  RegisterComponent,
+  useReactBricksContext,
+} from 'react-bricks/rsc/client'
 
 import {
   containerSizeEditProps,
@@ -39,7 +42,8 @@ const schema: types.IBlockType<NewsletterProps> = {
           selectOptions: {
             display: types.OptionsDisplay.Select,
             getOptions: async () => {
-              const items = await fetchForms()
+              const apiPrefix = useReactBricksContext().apiPrefix
+              const items = await fetchForms({ apiPrefix })
 
               return [
                 { value: '', label: '--Select Form--' },

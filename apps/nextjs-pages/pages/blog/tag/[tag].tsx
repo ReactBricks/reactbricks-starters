@@ -122,13 +122,14 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   try {
     const [pagesByTag, tagsResult, header, footer] = await Promise.all([
-      fetchPages(config.apiKey, {
+      fetchPages({
         tag: tag.toString(),
         type: 'blog',
         pageSize: 100,
         sort: '-publishedAt',
+        config,
       }),
-      fetchTags(config.apiKey),
+      fetchTags({ config }),
       fetchPage({ slug: 'header', language: context.locale, config })
         .then(({ author, ...page }) => page)
         .catch(() => {
@@ -166,7 +167,7 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
     return { paths: [], fallback: false }
   }
 
-  const { items: tags } = await fetchTags(config.apiKey)
+  const { items: tags } = await fetchTags({ config })
   const paths = tags.map((tag) => `/blog/tag/${tag}`)
 
   return { paths, fallback: false }

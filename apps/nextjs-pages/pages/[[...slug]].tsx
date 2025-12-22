@@ -131,8 +131,9 @@ export const getStaticPaths: GetStaticPaths = async (context) => {
     return { paths: [], fallback: true }
   }
 
-  const allPages = await fetchPages(config.apiKey, {
+  const allPages = await fetchPages({
     type: 'page',
+    config,
   })
 
   const paths = allPages

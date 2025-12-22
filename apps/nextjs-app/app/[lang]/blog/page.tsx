@@ -29,8 +29,16 @@ const getData = async (
   }
 
   const [tags, posts] = await Promise.all([
-    fetchTags(config.apiKey, undefined, undefined, undefined, {
-      next: { revalidate: 3 },
+    fetchTags({
+      page: undefined,
+      pageSize: undefined,
+      filterBy: undefined,
+      fetchOptions: {
+        next: {
+          revalidate: 3,
+        },
+      },
+      config,
     }),
     fetchPages({
       type: 'blog',

@@ -94,6 +94,7 @@ const NewsletterHeroForm: React.FC<{
           formId,
           emailAddress: email,
           data,
+          fetchOptions: { apiPrefix: rbContext.apiPrefix },
         })
       } catch (err) {
         throw createSubmissionError(
@@ -403,7 +404,8 @@ CallToAction.schema = {
           selectOptions: {
             display: types.OptionsDisplay.Select,
             getOptions: async () => {
-              const items = await fetchForms()
+              const apiPrefix = useReactBricksContext().apiPrefix
+              const items = await fetchForms({ apiPrefix })
 
               return [
                 { value: '', label: '--Select Form--' },
