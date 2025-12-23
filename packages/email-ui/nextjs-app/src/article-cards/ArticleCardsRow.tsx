@@ -169,6 +169,9 @@ const ArticleCardsRow: types.Brick<ArticleCardsRowProps> = ({
 ArticleCardsRow.schema = {
   name: 'email-article-cards-row',
   label: 'Email article cards row',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/nextjs-app/src/article-cards/ArticleCardsRow.tsx',
   hideFromAddMenu: true,
   getDefaultProps: () => ({}),
   sideEditProps: [],

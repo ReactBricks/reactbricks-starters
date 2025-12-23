@@ -135,7 +135,7 @@ Code.schema = {
   tags: ['blog', 'code', 'editor'],
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/blog/Code/Code.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-pages/src/singleColumnContent/Code/Code.tsx',
   previewImageUrl: `/bricks-preview-images/${blockNames.Code}.png`,
   getDefaultProps: () => ({
     ...sectionDefaults,

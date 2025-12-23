@@ -60,6 +60,9 @@ TableRow.schema = {
   label: 'Row',
   category: 'single column / blog',
   hideFromAddMenu: true,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-pages/src/singleColumnContent/Table/TableRow.tsx',
 
   getDefaultProps: () => ({
     cells: [

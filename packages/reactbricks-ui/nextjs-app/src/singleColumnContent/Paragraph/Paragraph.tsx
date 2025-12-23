@@ -102,7 +102,7 @@ Paragraph.schema = {
   tags: ['blog', 'paragraph', 'text'],
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/blog/Paragraph/Paragraph.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-app/src/singleColumnContent/Paragraph/Paragraph.tsx',
   previewImageUrl: `/bricks-preview-images/${blockNames.Paragraph}.png`,
   getDefaultProps: () => ({
     ...sectionDefaults,

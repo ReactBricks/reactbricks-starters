@@ -76,16 +76,16 @@ const FormInput: types.Brick<FormInputProps> = ({
           valueAsDate: false,
         }
       : inputType === 'date'
-      ? {
-          pattern: undefined,
-          valueAsNumber: false,
-          valueAsDate: true,
-        }
-      : {
-          pattern: strToRegex(pattern),
-          valueAsNumber: false,
-          valueAsDate: false,
-        }
+        ? {
+            pattern: undefined,
+            valueAsNumber: false,
+            valueAsDate: true,
+          }
+        : {
+            pattern: strToRegex(pattern),
+            valueAsNumber: false,
+            valueAsDate: false,
+          }
 
   const registerAttributes = fieldName
     ? register(fieldName?.replace(/\s/g, '').toLowerCase(), {
@@ -161,6 +161,9 @@ FormInput.schema = {
   category: 'contact',
   hideFromAddMenu: true,
   // tags: [],
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/contacts/FormBuilder/FormInput.tsx',
 
   getDefaultProps: () => ({
     fieldName: 'firstname',

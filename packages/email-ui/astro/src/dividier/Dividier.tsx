@@ -20,6 +20,9 @@ const Dividier: types.Brick<DividierProps> = ({}) => {
 Dividier.schema = {
   name: 'email-dividier',
   label: 'Email dividier',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/astro/src/dividier/Dividier.tsx',
   getDefaultProps: () => ({}),
   sideEditProps: [],
 }

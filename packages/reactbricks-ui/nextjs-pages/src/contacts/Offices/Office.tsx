@@ -47,7 +47,8 @@ Office.schema = {
   category: 'contact',
   hideFromAddMenu: true,
   playgroundLinkLabel: 'View source code on Github',
-  playgroundLinkUrl: '',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-pages/src/contacts/Offices/Office.tsx',
   getDefaultProps: () => ({
     contactTitle: 'San Francisco',
     contactAddress: '3319 Harrison Street\nSan Francisco, CA',

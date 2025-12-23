@@ -62,6 +62,9 @@ Table.schema = {
   label: 'Table',
   category: 'single column / blog',
   tags: ['table'],
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-app/src/singleColumnContent/Table/Table.tsx',
   repeaterItems: [
     {
       name: 'rows',

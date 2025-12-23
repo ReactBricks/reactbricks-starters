@@ -125,7 +125,7 @@ Testimonial.schema = {
   category: 'testimonials',
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/Testimonial/Testimonial.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-pages/src/testimonials/Testimonial/Testimonial.tsx',
   previewImageUrl: `/bricks-preview-images/${blockNames.Testimonial}.png`,
   getDefaultProps: () => ({
     ...sectionDefaults,

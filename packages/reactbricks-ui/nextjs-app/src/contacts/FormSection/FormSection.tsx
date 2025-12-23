@@ -54,6 +54,9 @@ FormSection.schema = {
   label: 'Form',
   category: 'contact',
   previewImageUrl: `/bricks-preview-images/${blockNames.FormSection}.png`,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-app/src/contacts/FormSection/FormSection.tsx',
 
   repeaterItems: [
     {

@@ -63,8 +63,10 @@ Offices.schema = {
   name: blockNames.Offices,
   label: 'Offices',
   category: 'contact',
-  playgroundLinkLabel: '',
-  playgroundLinkUrl: '',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/contacts/Offices/Offices.tsx',
+
   previewImageUrl: `/bricks-preview-images/${blockNames.Offices}.png`,
   getDefaultProps: () => ({
     ...sectionDefaults,

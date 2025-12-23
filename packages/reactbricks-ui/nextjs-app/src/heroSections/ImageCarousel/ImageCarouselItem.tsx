@@ -44,6 +44,9 @@ ImageCarouselItem.schema = {
   label: 'ImageCarouselItem',
   category: 'hero sections',
   hideFromAddMenu: true,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-app/src/heroSections/ImageCarousel/ImageCarouselItem.tsx',
   getDefaultProps: () =>
     ({
       image: {
@@ -57,7 +60,7 @@ ImageCarouselItem.schema = {
         alt: 'altText',
         seoName: '',
       },
-    } as any),
+    }) as any,
 }
 
 export default ImageCarouselItem

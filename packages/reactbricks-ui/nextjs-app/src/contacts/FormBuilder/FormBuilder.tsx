@@ -54,6 +54,9 @@ FormBuilder.schema = {
   category: 'contact',
   hideFromAddMenu: true,
   previewImageUrl: `/bricks-preview-images/${blockNames.FormBuilder}.png`,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-app/src/contacts/FormBuilder/FormBuilder.tsx',
   repeaterItems: [
     {
       name: 'formElements',

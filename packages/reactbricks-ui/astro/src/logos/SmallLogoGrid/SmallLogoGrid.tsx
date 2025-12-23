@@ -73,7 +73,7 @@ SmallLogoGrid.schema = {
   tags: ['logo grid', 'logos', 'logo cloud', 'customers'],
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/LogoGrid/LogoGrid.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/logos/SmallLogoGrid/SmallLogoGrid.tsx',
   previewImageUrl: `/bricks-preview-images/${blockNames.SmallLogoGrid}.png`,
   getDefaultProps: () => ({
     ...sectionDefaults,

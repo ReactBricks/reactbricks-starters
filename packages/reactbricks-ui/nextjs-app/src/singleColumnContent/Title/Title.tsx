@@ -67,6 +67,9 @@ Title.schema = {
   category: 'single column / blog',
   tags: ['title'],
   previewImageUrl: `/bricks-preview-images/${blockNames.Title}.png`,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-app/src/singleColumnContent/Title/Title.tsx',
   // Defaults when a new brick is added
   getDefaultProps: () => ({
     ...sectionDefaults,

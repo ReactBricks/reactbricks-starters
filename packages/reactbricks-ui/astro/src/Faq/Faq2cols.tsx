@@ -46,10 +46,10 @@ Faq2cols.schema = {
   label: 'Faq 2 cols',
   category: 'faq',
   tags: ['frequently asked questions', 'faq', '2 cols faq'],
+  previewImageUrl: `/bricks-preview-images/${blockNames.Faqs2cols}.png`,
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/Faq/Faq.tsx',
-  previewImageUrl: `/bricks-preview-images/${blockNames.Faqs2cols}.png`,
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/Faq/Faq2cols.tsx',
   getDefaultProps: () => ({
     ...sectionDefaults,
     borderTop: 'full',

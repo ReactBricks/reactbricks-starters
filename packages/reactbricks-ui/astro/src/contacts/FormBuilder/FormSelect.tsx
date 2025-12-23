@@ -119,6 +119,9 @@ FormSelect.schema = {
   label: 'Select',
   category: 'contact',
   hideFromAddMenu: true,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/contacts/FormBuilder/FormSelect.tsx',
 
   getDefaultProps: () => ({
     fieldName: 'select',

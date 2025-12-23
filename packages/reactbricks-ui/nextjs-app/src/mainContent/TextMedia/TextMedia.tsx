@@ -244,7 +244,7 @@ TextMedia.schema = {
   previewImageUrl: `/bricks-preview-images/${blockNames.TextMedia}.png`,
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/TextMedia/TextMedia.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-app/src/mainContent/TextMedia/TextMedia.tsx',
   getDefaultProps: () => ({
     ...sectionDefaults,
     title: 'Making content editing fun!',

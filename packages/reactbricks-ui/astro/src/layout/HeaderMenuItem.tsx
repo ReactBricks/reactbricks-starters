@@ -143,7 +143,9 @@ HeaderMenuItem.schema = {
   label: 'Menu Item',
   category: 'layout',
   hideFromAddMenu: true,
-
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/layout/HeaderMenuItem.tsx',
   repeaterItems: [
     {
       name: 'submenuItems',

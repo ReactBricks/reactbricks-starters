@@ -284,6 +284,9 @@ Newsletter.schema = {
   category: 'call to action',
   hideFromAddMenu: false,
   previewImageUrl: `/bricks-preview-images/${blockNames.NewsletterSubscribe}.png`,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-pages/src/cta/NewsletterSubscribe/NewsletterSubscribe.tsx',
   getDefaultProps: () => ({
     ...sectionDefaults,
     width: 'small',

@@ -114,6 +114,9 @@ Team2ColsItem.schema = {
   label: 'Member',
   category: 'team',
   hideFromAddMenu: true,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/team/Team2Cols/Team2ColsItem.tsx',
   // tags: [],
 
   // Defaults when a new brick is added

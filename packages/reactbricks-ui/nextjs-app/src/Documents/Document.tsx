@@ -122,7 +122,7 @@ Document.schema = {
   hideFromAddMenu: true,
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/Documents/Document.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-app/src/Documents/Document.tsx',
   getDefaultProps: () => ({
     fileName: 'Document name',
     fileDescription: 'Description of this document',

@@ -130,6 +130,9 @@ CarouselBrick.schema = {
     },
   ],
   previewImageUrl: `/bricks-preview-images/${blockNames.ImageCarousel}.png`,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/heroSections/ImageCarousel/ImageCarousel.tsx',
   sideEditProps: [
     {
       groupName: 'Carousel',

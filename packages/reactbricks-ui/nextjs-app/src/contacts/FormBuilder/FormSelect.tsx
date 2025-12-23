@@ -9,6 +9,9 @@ const schema: types.IBlockType<FormSelectProps> = {
   label: 'Select',
   category: 'contact',
   hideFromAddMenu: true,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-app/src/contacts/FormBuilder/FormSelect.tsx',
 
   getDefaultProps: () => ({
     fieldName: 'select',

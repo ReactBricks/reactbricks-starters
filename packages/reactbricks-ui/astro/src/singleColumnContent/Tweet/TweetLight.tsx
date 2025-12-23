@@ -174,7 +174,7 @@ TweetLight.schema = {
   tags: ['tweet', 'twitter', 'light'],
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/blog/Tweet/TweetLight.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/singleColumnContent/Tweet/TweetLight.tsx',
   previewImageUrl: `/bricks-preview-images/${blockNames.TweetLight}.png`,
   getDefaultProps: () => ({
     ...sectionDefaults,

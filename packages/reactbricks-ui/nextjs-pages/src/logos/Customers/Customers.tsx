@@ -60,7 +60,7 @@ Customers.schema = {
   tags: ['customers', 'logos', 'logo cloud'],
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/Customers/Customers.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-pages/src/logos/Customers/Customers.tsx',
   previewImageUrl: `/bricks-preview-images/${blockNames.Customers}.png`,
   getDefaultProps: () => ({
     backgroundColor: bgColors.WHITE.value,

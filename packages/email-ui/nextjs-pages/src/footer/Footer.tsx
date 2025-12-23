@@ -212,6 +212,9 @@ const Footer: types.Brick<HeaderProps> = ({
 Footer.schema = {
   name: 'email-footer',
   label: 'Email footer',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/nextjs-pages/src/footer/Footer.tsx',
   getDefaultProps: () => ({
     title: 'Acme corporation',
     description: 'Think different',

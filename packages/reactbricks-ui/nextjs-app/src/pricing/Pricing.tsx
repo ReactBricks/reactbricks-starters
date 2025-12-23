@@ -48,6 +48,9 @@ Pricing.schema = {
   category: 'pricing',
   tags: ['pricing', 'plans', 'price'],
   previewImageUrl: `/bricks-preview-images/${blockNames.Pricing}.png`,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-app/src/pricing/Pricing.tsx',
   getDefaultProps: () => ({
     ...sectionDefaults,
     plans: [

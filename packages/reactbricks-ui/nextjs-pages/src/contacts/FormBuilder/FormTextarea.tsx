@@ -102,6 +102,9 @@ FormTextarea.schema = {
   label: 'Textarea',
   category: 'contact',
   hideFromAddMenu: true,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-pages/src/contacts/FormBuilder/FormTextarea.tsx',
 
   getDefaultProps: () => ({
     columns: '2',

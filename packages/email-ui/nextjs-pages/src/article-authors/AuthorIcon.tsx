@@ -47,6 +47,9 @@ const AuthorIcon: types.Brick<AuthorIconProps> = ({ linkUrl, icon }) => {
 AuthorIcon.schema = {
   name: 'email-author-icon',
   label: 'Email author icon',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/nextjs-pages/src/article-authors/AuthorIcon.tsx',
   hideFromAddMenu: true,
   getDefaultProps: () => ({}),
   sideEditProps: [

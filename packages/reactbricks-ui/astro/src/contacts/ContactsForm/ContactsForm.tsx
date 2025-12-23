@@ -126,6 +126,9 @@ ContactsForm.schema = {
   label: 'Contacts with Form',
   category: 'contact',
   previewImageUrl: `/bricks-preview-images/contacts-with-form.png`,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/contacts/ContactsForm/ContactsForm.tsx',
   getDefaultProps: () => ({
     ...sectionDefaults,
     address: '4556 Brendan Ferry\nLos Angeles, CA 90210',

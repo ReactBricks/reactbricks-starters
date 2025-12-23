@@ -46,6 +46,9 @@ AuthorIcon.schema = {
   name: 'email-author-icon',
   label: 'Email author icon',
   hideFromAddMenu: true,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/astro/src/article-authors/AuthorIcon.tsx',
   getDefaultProps: () => ({}),
   sideEditProps: [
     {

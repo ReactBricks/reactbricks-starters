@@ -53,6 +53,9 @@ const EmailText: types.Brick<MarkdownProps> = ({ text }) => {
 EmailText.schema = {
   name: 'email-text',
   label: 'Email text',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/astro/src/text/Text.tsx',
   getDefaultProps: () => ({}),
   sideEditProps: [],
 }

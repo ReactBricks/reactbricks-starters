@@ -73,6 +73,9 @@ PlanFeature.schema = {
   name: blockNames.PlanFeature,
   label: 'Feature',
   category: 'pricing',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-pages/src/pricing/PlanFeature.tsx',
   hideFromAddMenu: true,
   getDefaultProps: () => ({
     featureText: 'Up to 10 users',

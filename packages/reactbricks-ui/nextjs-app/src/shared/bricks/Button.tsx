@@ -35,7 +35,7 @@ const Button: types.Brick<ButtonProps> = ({
   simpleAnchorLink = false,
   text,
   disabled = false,
-}) => {  
+}) => {
   const target = isTargetBlank
     ? { target: '_blank', rel: 'noopener noreferrer' }
     : {}
@@ -125,7 +125,7 @@ Button.schema = {
   hideFromAddMenu: true,
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/shared/Button.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-app/src/shared/bricks/Button.tsx',
 
   getDefaultProps: () => ({
     type: 'link',

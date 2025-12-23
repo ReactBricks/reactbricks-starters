@@ -42,6 +42,9 @@ const TextContainer: types.Brick<TextContainerProps> = ({
 TextContainer.schema = {
   name: 'email-text-container',
   label: 'Email text container',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/nextjs-app/src/text-container/TextContainer.tsx',
 
   getDefaultProps: () => ({}),
   sideEditProps: [emailBackgroundColorsEditProps],

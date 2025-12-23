@@ -32,6 +32,9 @@ FooterLink.schema = {
   label: 'Link',
   category: 'layout',
   hideFromAddMenu: true,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-app/src/layout/FooterLink.tsx',
   // tags: [],
 
   // Defaults when a new brick is added

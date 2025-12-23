@@ -105,7 +105,9 @@ FormCheckbox.schema = {
   label: 'Checkbox',
   category: 'contact',
   hideFromAddMenu: true,
-
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-pages/src/contacts/FormBuilder/FormCheckbox.tsx',
   getDefaultProps: () => ({
     label: 'I accept the processing of my data',
     columns: '2',

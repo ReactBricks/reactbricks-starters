@@ -51,6 +51,9 @@ Spacer.schema = {
   label: 'Spacer',
   category: 'separator',
   previewImageUrl: `/bricks-preview-images/${blockNames.Spacer}.png`,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-pages/src/separators/Spacer/Spacer.tsx',
   getDefaultProps: () => ({
     backgroundColor: bgColors.WHITE.value,
     height: '5',

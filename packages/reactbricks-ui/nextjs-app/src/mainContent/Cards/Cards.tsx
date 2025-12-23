@@ -74,6 +74,9 @@ Cards.schema = {
   category: 'main content',
   tags: ['cards', 'thumbnails', 'features'],
   previewImageUrl: `/bricks-preview-images/${blockNames.Cards}.png`,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-app/src/mainContent/Cards/Cards.tsx',
   getDefaultProps: () => ({
     ...sectionDefaults,
     withTitle: true,

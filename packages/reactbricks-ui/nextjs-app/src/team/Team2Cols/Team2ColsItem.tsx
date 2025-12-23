@@ -28,7 +28,11 @@ const Team2ColsItem: types.Brick<Team2ColsItemProps> = ({
       <Image
         propName="picture"
         source={picture}
-        alt={typeof memberName === 'string' ? memberName : Plain.serialize(memberName)}
+        alt={
+          typeof memberName === 'string'
+            ? memberName
+            : Plain.serialize(memberName)
+        }
         aspectRatio={1}
         imageClassName="rounded-full w-12 h-12 object-contain"
       />
@@ -111,6 +115,9 @@ Team2ColsItem.schema = {
   label: 'Member',
   category: 'team',
   hideFromAddMenu: true,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-app/src/team/Team2Cols/Team2ColsItem.tsx',
   // tags: [],
 
   // Defaults when a new brick is added

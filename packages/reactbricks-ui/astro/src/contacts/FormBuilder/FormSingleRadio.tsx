@@ -80,6 +80,9 @@ FormSingleRadio.schema = {
   category: 'contact',
   hideFromAddMenu: true,
   // tags: [],
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/contacts/FormBuilder/FormSingleRadio.tsx',
 
   // Defaults when a new brick is added
   getDefaultProps: () => ({

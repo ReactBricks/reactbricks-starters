@@ -101,6 +101,9 @@ const Header: types.Brick<HeaderProps> = ({
 Header.schema = {
   name: 'email-header',
   label: 'Email header',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/nextjs-app/src/header/Header.tsx',
   getDefaultProps: () => ({
     centered: false,
     menuItems: [

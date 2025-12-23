@@ -119,6 +119,9 @@ const FeatureItem: types.Brick<FeatureItemProps> = ({
 FeatureItem.schema = {
   name: 'email-feature-item',
   label: 'Email feature item',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/nextjs-pages/src/features/FeatureItem.tsx',
   hideFromAddMenu: true,
   getDefaultProps: () => ({
     title: 'Versatile Comfort',

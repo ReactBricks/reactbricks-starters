@@ -269,6 +269,9 @@ const GalleryRow: types.Brick<GalleryRowProps> = ({
 GalleryRow.schema = {
   name: 'email-gallery-row',
   label: 'Email gallery row',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/nextjs-app/src/gallery/GalleryRow.tsx',
   hideFromAddMenu: true,
   getDefaultProps: () => ({
     rounded: true,

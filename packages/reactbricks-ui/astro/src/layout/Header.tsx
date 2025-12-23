@@ -150,6 +150,9 @@ Header.schema = {
   category: 'layout',
   tags: ['header', 'menu'],
   previewImageUrl: `/bricks-preview-images/${blockNames.Header}.png`,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/layout/Header.tsx',
   repeaterItems: [
     {
       name: 'menuItems',

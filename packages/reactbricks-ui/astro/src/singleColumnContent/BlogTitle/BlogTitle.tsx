@@ -118,7 +118,7 @@ BlogTitle.schema = {
   playgroundLinkLabel: 'View source code on Github',
   previewImageUrl: `/bricks-preview-images/${blockNames.BlogTitle}.png`,
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/blog/BlogTitle/BlogTitle.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/singleColumnContent/BlogTitle/BlogTitle.tsx',
   getDefaultProps: () => ({
     ...sectionDefaults,
     width: 'small',

@@ -65,6 +65,9 @@ const HeadingBrick: types.Brick<HeadingProps> = ({ as, title, centered }) => {
 HeadingBrick.schema = {
   name: 'email-heading',
   label: 'Email heading',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/astro/src/heading/Heading.tsx',
   getDefaultProps: () => ({
     as: 'h2',
   }),

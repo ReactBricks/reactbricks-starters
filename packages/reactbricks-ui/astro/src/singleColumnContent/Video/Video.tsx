@@ -57,6 +57,9 @@ SingleColumnVideo.schema = {
   category: 'single column / blog',
   tags: ['blog', 'video'],
   previewImageUrl: `/bricks-preview-images/${blockNames.Video}.png`,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/singleColumnContent/Video/Video.tsx',
   // Defaults when a new brick is added
   getDefaultProps: () => ({
     ...sectionDefaults,

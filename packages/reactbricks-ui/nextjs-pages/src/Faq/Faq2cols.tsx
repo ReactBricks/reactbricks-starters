@@ -49,7 +49,7 @@ Faq2cols.schema = {
   tags: ['frequently asked questions', 'faq', '2 cols faq'],
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/Faq/Faq.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-pages/src/Faq/Faq2cols.tsx',
   previewImageUrl: `/bricks-preview-images/${blockNames.Faqs2cols}.png`,
   getDefaultProps: () => ({
     ...sectionDefaults,

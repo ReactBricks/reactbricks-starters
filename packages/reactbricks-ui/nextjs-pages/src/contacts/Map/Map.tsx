@@ -47,8 +47,16 @@ export const MapBrick: types.Brick<MapProps> = ({
     }
   }
   return (
-    <Section backgroundColor={backgroundColor} borderTop={borderTop} borderBottom={borderBottom}>
-      <Container size={width} paddingTop={paddingTop} paddingBottom={paddingBottom}>
+    <Section
+      backgroundColor={backgroundColor}
+      borderTop={borderTop}
+      borderBottom={borderBottom}
+    >
+      <Container
+        size={width}
+        paddingTop={paddingTop}
+        paddingBottom={paddingBottom}
+      >
         <Map
           center={[parseFloat(lat), parseFloat(lng)]}
           height={350}
@@ -74,7 +82,7 @@ MapBrick.schema = {
   tags: ['contacts', 'map'],
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/Map/Map.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-pages/src/contacts/Map/Map.tsx',
   previewImageUrl: `/bricks-preview-images/${blockNames.Map}.png`,
   getDefaultProps: () => ({
     ...sectionDefaults,
@@ -111,8 +119,9 @@ MapBrick.schema = {
             if (!MAPTILER_ACCESS_TOKEN) {
               return (
                 <p className="text-sm">
-                  For better maps, please create a MapTiler free account and set the{' '}
-                  <code className="text-xs">MAPTILER_ACCESS_TOKEN</code> string.
+                  For better maps, please create a MapTiler free account and set
+                  the <code className="text-xs">MAPTILER_ACCESS_TOKEN</code>{' '}
+                  string.
                 </p>
               )
             }

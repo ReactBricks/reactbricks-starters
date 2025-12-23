@@ -67,7 +67,7 @@ const TextMedia: types.Brick<TextMediaProps> = ({
   buttons,
   logos,
   imageSource,
-  videoFile
+  videoFile,
 }) => {
   const titleColor = textColors.GRAY_900
   const textColor = textColors.GRAY_700
@@ -244,7 +244,7 @@ TextMedia.schema = {
   previewImageUrl: `/bricks-preview-images/${blockNames.TextMedia}.png`,
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/TextMedia/TextMedia.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-pages/src/mainContent/TextMedia/TextMedia.tsx',
   getDefaultProps: () => ({
     ...sectionDefaults,
     title: 'Making content editing fun!',

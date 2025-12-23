@@ -47,6 +47,9 @@ ImageCarouselItem.schema = {
   label: 'ImageCarouselItem',
   category: 'hero sections',
   hideFromAddMenu: true,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/heroSections/ImageCarousel/ImageCarouselItem.tsx',
   getDefaultProps: () => ({
     image: {
       src: 'https://images.reactbricks.com/original/8309ea05-d105-4f50-9d54-ba86ebddcfbe.jpg',

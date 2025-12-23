@@ -186,6 +186,9 @@ const ArticleImage: types.Brick<ArticleImageProps> = ({
 ArticleImage.schema = {
   name: 'email-article-image',
   label: 'Email article image',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/nextjs-app/src/article-image/ArticleImage.tsx',
   getDefaultProps: () => ({
     eyebrow: "What's new",
     title: 'Versatile Comfort',

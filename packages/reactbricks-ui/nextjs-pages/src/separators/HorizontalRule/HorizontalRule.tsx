@@ -37,6 +37,9 @@ HorizontalRule.schema = {
   label: 'Horizontal Rule',
   category: 'separator',
   previewImageUrl: `/bricks-preview-images/${blockNames.HorizontalRule}.png`,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-pages/src/separators/HorizontalRule/HorizontalRule.tsx',
   getDefaultProps: () => ({
     backgroundColor: bgColors.WHITE.value,
     width: 'medium',

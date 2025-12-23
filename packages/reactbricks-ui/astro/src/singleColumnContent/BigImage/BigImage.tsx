@@ -47,6 +47,9 @@ BigImage.schema = {
   category: 'single column / blog',
   tags: ['blog', 'image', 'single image'],
   previewImageUrl: `/bricks-preview-images/${blockNames.BigImage}.png`,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/singleColumnContent/BigImage/BigImage.tsx',
   getDefaultProps: () => ({
     ...sectionDefaults,
     width: 'small',

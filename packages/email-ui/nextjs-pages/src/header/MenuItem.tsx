@@ -74,6 +74,9 @@ const MenuItem: types.Brick<MenuItemProps> = ({
 MenuItem.schema = {
   name: 'email-header-menu-item',
   label: 'Email header menu item',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/nextjs-pages/src/header/MenuItem.tsx',
   hideFromAddMenu: true,
   getDefaultProps: () => ({}),
   sideEditProps: [

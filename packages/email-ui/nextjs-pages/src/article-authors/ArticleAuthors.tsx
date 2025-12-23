@@ -95,6 +95,9 @@ const ArticleAuthors: types.Brick<ArticleAuthorsProps> = ({ authors }) => {
 ArticleAuthors.schema = {
   name: 'email-article-authors',
   label: 'Email article authors',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/nextjs-pages/src/article-authors/ArticleAuthors.tsx',
   getDefaultProps: () => ({
     authors: [
       {

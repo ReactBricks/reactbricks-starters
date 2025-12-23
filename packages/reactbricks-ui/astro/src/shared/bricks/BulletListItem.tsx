@@ -58,8 +58,7 @@ BulletListItem.schema = {
   hideFromAddMenu: true,
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/shared/BulletListItem.tsx',
-
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/shared/bricks/BulletListItem.tsx',
   getDefaultProps: () => ({
     bulletColor: highlightBgColors.SKY.value,
     text: 'New item',

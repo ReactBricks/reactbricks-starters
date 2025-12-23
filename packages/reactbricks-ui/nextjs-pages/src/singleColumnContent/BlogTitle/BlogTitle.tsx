@@ -107,10 +107,10 @@ BlogTitle.schema = {
   label: 'Blog Title',
   category: 'single column / blog',
   tags: ['blog', 'title', 'blog title'],
-  playgroundLinkLabel: 'View source code on Github',
   previewImageUrl: `/bricks-preview-images/${blockNames.BlogTitle}.png`,
+  playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/blog/BlogTitle/BlogTitle.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-pages/src/singleColumnContent/BlogTitle/BlogTitle.tsx',
   getDefaultProps: () => ({
     ...sectionDefaults,
     width: 'small',

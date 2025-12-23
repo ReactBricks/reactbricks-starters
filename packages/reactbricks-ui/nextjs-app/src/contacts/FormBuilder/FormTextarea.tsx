@@ -9,6 +9,9 @@ const schema: types.IBlockType<FormTextareaProps> = {
   label: 'Textarea',
   category: 'contact',
   hideFromAddMenu: true,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-app/src/contacts/FormBuilder/FormTextarea.tsx',
 
   getDefaultProps: () => ({
     columns: '2',

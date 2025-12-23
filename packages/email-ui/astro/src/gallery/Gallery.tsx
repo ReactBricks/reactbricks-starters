@@ -101,6 +101,9 @@ const Gallery: types.Brick<GalleryProps> = ({
 Gallery.schema = {
   name: 'email-gallery',
   label: 'Email gallery',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/astro/src/gallery/Gallery.tsx',
   getDefaultProps: () => ({
     eyebrow: 'Our products',
     title: 'Elegant Style',

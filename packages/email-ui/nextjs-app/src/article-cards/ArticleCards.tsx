@@ -68,6 +68,9 @@ const ArticleCards: types.Brick<ArticleCardsProps> = ({
 ArticleCards.schema = {
   name: 'email-article-cards',
   label: 'Email article cards',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/nextjs-app/src/article-cards/ArticleCards.tsx',
   getDefaultProps: () => ({
     title: 'Elevate Outdoor Living',
     description:

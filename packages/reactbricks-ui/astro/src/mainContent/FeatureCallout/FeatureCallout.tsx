@@ -94,7 +94,7 @@ FeatureCallout.schema = {
   tags: ['feature', 'single feature', 'highlight'],
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/FeatureCallout/FeatureCallout.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/mainContent/FeatureCallout/FeatureCallout.tsx',
   previewImageUrl: `/bricks-preview-images/${blockNames.FeatureCallout}.png`,
   getDefaultProps: () => ({
     ...sectionDefaults,

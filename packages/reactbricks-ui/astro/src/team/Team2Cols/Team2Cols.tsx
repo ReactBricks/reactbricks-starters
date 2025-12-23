@@ -65,6 +65,9 @@ Team2Cols.schema = {
   category: 'team',
   repeaterItems: [{ name: 'members', itemType: blockNames.Team2ColsItem }],
   previewImageUrl: `/bricks-preview-images/${blockNames.Team2Cols}.png`,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/team/Team2Cols/Team2Cols.tsx',
   getDefaultProps: () => ({
     ...sectionDefaults,
     withTitle: true,

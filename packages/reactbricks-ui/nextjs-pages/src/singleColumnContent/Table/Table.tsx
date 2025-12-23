@@ -28,7 +28,7 @@ const Table: types.Brick<TableProps> = ({
   paddingTop,
   paddingBottom,
   width,
-  rows
+  rows,
 }) => {
   return (
     <Section
@@ -62,6 +62,9 @@ Table.schema = {
   label: 'Table',
   category: 'single column / blog',
   tags: ['table'],
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-pages/src/singleColumnContent/Table/Table.tsx',
   repeaterItems: [
     {
       name: 'rows',

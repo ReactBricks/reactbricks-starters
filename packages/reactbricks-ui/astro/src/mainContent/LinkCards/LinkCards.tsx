@@ -67,7 +67,7 @@ LinkCards.schema = {
   tags: ['cards', 'links', 'thumbnails', 'features', 'banners'],
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/Features/Features.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/mainContent/LinkCards/LinkCards.tsx',
   previewImageUrl: `/bricks-preview-images/${blockNames.LinkCards}.png`,
   getDefaultProps: () => ({
     ...sectionDefaults,

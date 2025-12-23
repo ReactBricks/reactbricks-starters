@@ -340,12 +340,12 @@ const CallToAction: types.Brick<CallToActionProps> = ({
 CallToAction.schema = {
   name: blockNames.NewsletterHero,
   label: 'Newsletter hero',
-  playgroundLinkLabel: 'View source code on Github',
   category: 'call to action',
   tags: ['newsletter', 'subscribe', 'hero'],
   previewImageUrl: `/bricks-preview-images/${blockNames.NewsletterHero}.png`,
+  playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/CallToAction/CallToAction.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-pages/src/cta/NewsletterHero/NewsletterHero.tsx',
 
   getDefaultProps: () => ({
     ...sectionDefaults,

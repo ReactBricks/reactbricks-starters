@@ -78,6 +78,9 @@ Testimonial3ColsItem.schema = {
   label: 'Single Testimonial',
   category: 'testimonials',
   hideFromAddMenu: true,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/testimonials/Testimonial3Cols/Testimonial3ColsItem.tsx',
   getDefaultProps: () => ({
     quote: "I'm smart enough to know that I'm dumb.",
     authorName: 'Richard Feynman',

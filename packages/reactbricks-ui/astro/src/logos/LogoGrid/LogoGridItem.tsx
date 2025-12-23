@@ -51,7 +51,7 @@ LogoGridItem.schema = {
   hideFromAddMenu: true,
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/Customers/CustomerItem.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/logos/LogoGrid/LogoGridItem.tsx',
 
   getDefaultProps: () => ({
     image: logos.REACT_BRICKS,

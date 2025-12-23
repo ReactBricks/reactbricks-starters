@@ -22,7 +22,7 @@ const MenuItem: types.Brick<MenuItemProps> = ({
   icon,
 }) => {
   return (
-    <td className='px-[8px]'>
+    <td className="px-[8px]">
       <Link className="text-gray-600 [text-decoration:none]" href={linkUrl}>
         {withIcons ? (
           isAdmin() ? (
@@ -34,7 +34,7 @@ const MenuItem: types.Brick<MenuItemProps> = ({
               aria-hidden="true"
               maxWidth={undefined}
               imageClassName="mx-[4px] w-[36px] h-[36px]"
-              imageStyle={{display:'block', maxWidth:'none'}}
+              imageStyle={{ display: 'block', maxWidth: 'none' }}
             />
           ) : (
             <Img
@@ -68,6 +68,9 @@ const MenuItem: types.Brick<MenuItemProps> = ({
 MenuItem.schema = {
   name: 'email-header-menu-item',
   label: 'Email header menu item',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/astro/src/header/MenuItem.tsx',
   hideFromAddMenu: true,
   getDefaultProps: () => ({}),
   sideEditProps: [

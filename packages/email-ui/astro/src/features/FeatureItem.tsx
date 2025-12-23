@@ -118,6 +118,9 @@ FeatureItem.schema = {
   name: 'email-feature-item',
   label: 'Email feature item',
   hideFromAddMenu: true,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/astro/src/features/FeatureItem.tsx',
   getDefaultProps: () => ({
     title: 'Versatile Comfort',
     description:

@@ -27,6 +27,9 @@ const EmailMarkdown: types.Brick<MarkdownProps> = ({ markdown }) => {
 EmailMarkdown.schema = {
   name: 'email-markdown',
   label: 'Email markdown',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/nextjs-app/src/markdown/Markdown.tsx',
   getDefaultProps: () => ({
     markdown: `## Hello, this is my email template
 

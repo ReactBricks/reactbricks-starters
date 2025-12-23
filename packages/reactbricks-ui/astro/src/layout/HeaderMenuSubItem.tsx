@@ -60,7 +60,9 @@ HeaderMenuSubItem.schema = {
   label: 'Submenu Item',
   category: 'layout',
   hideFromAddMenu: true,
-
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/layout/HeaderMenuSubItem.tsx',
   getDefaultProps: () => ({
     linkText: 'Changelog',
     linkDescription: 'Release notes for all React Bricks versions',

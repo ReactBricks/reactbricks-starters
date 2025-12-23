@@ -117,6 +117,9 @@ const ArticleAuthor: types.Brick<ArticleAuthorProps> = ({
 ArticleAuthor.schema = {
   name: 'email-article-author',
   label: 'Email article author',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/nextjs-pages/src/article-authors/Author.tsx',
   hideFromAddMenu: true,
   getDefaultProps: () => ({
     name: 'Jon Doe',

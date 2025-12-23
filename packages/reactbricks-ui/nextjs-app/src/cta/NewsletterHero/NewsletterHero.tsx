@@ -24,7 +24,7 @@ const schema: types.IBlockType<NewsletterHeroProps> = {
   tags: ['newsletter', 'subscribe', 'hero'],
   previewImageUrl: `/bricks-preview-images/${blockNames.NewsletterHero}.png`,
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/NewsletterHero/NewsletterHero.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-app/src/cta/NewsletterHero/NewsletterHero.tsx',
 
   getDefaultProps: () => ({
     ...sectionDefaults,

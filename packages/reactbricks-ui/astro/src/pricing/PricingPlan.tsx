@@ -170,6 +170,9 @@ PricingPlan.schema = {
   label: 'Plan',
   category: 'pricing',
   hideFromAddMenu: true,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/pricing/PricingPlan.tsx',
   getDefaultProps: () => ({
     popularTagText: 'Most popular',
     withPopularTag: false,

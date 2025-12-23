@@ -132,7 +132,7 @@ HeroUnit.schema = {
   tags: ['hero unit', 'title'],
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/Hero%20Unit/HeroUnit.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/heroSections/HeroUnit/HeroUnit.tsx',
   previewImageUrl: `/bricks-preview-images/${blockNames.HeroUnit}.png`,
   getDefaultProps: () => ({
     ...sectionDefaults,

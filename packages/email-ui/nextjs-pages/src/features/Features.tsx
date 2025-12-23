@@ -125,6 +125,9 @@ const Features: types.Brick<FeaturesProps> = ({
 Features.schema = {
   name: 'email-features',
   label: 'Email features',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/nextjs-pages/src/features/Features.tsx',
   getDefaultProps: () => ({
     title: 'Functional Style',
     description:

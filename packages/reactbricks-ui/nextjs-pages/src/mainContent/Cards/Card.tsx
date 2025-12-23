@@ -117,6 +117,9 @@ Card.schema = {
   label: 'Card',
   category: 'main content',
   hideFromAddMenu: true,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-pages/src/mainContent/Cards/Card.tsx',
   getDefaultProps: () => ({
     withIcon: true,
     withTitle: true,

@@ -56,7 +56,7 @@ Features.schema = {
   tags: ['features'],
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/Features/Features.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-app/src/mainContent/Features/Features.tsx',
   previewImageUrl: `/bricks-preview-images/${blockNames.Features}.png`,
   getDefaultProps: () => ({
     ...sectionDefaults,

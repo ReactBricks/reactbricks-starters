@@ -46,7 +46,9 @@ Office.schema = {
   category: 'contact',
   hideFromAddMenu: true,
   playgroundLinkLabel: 'View source code on Github',
-  playgroundLinkUrl: '',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/contacts/Offices/Office.tsx',
+
   getDefaultProps: () => ({
     city: 'San Francisco',
     address: '3319 Harrison Street\nSan Francisco, CA',

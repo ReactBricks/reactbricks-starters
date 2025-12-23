@@ -69,6 +69,9 @@ Table.schema = {
     },
   ],
   previewImageUrl: `/bricks-preview-images/${blockNames.Table}.png`,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/singleColumnContent/Table/Table.tsx',
   sideEditProps: [
     {
       groupName: 'Table',

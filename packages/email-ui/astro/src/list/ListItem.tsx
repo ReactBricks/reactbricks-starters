@@ -171,6 +171,9 @@ const EmailListItem: types.Brick<EmailListItemProps> = ({
 EmailListItem.schema = {
   name: 'email-list-item',
   label: 'Email list item',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/astro/src/list/ListItem.tsx',
   hideFromAddMenu: true,
   getDefaultProps: () => ({}),
   sideEditProps: [

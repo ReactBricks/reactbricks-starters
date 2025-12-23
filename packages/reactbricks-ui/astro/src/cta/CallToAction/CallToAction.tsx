@@ -73,7 +73,8 @@ CallToAction.schema = {
   tags: ['cta', 'call to action'],
   previewImageUrl: `/bricks-preview-images/${blockNames.CallToAction}.png`,
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/CallToAction/CallToAction.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/astro/src/cta/CallToAction/CallToAction.tsx',
+
   getDefaultProps: () => ({
     ...sectionDefaults,
     borderTop: 'boxed',

@@ -46,6 +46,9 @@ const EmailList: types.Brick<ListProps> = ({ title, listItems, withImage }) => {
 EmailList.schema = {
   name: 'email-list',
   label: 'Email list',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/astro/src/list/List.tsx',
   getDefaultProps: () => ({
     title: 'How Our Service Works: 5 Simple Steps',
     withImage: true,

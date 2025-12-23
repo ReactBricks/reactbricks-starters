@@ -12,7 +12,7 @@ const schema: types.IBlockType<MapProps> = {
   tags: ['contacts', 'map'],
   playgroundLinkLabel: 'View source code on Github',
   playgroundLinkUrl:
-    'https://github.com/ReactBricks/react-bricks-ui/blob/master/src/website/Map/Map.tsx',
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-app/src/contacts/Map/Map.tsx',
   previewImageUrl: `/bricks-preview-images/map.png`,
   getDefaultProps: () => ({
     lat: '45.6782509',

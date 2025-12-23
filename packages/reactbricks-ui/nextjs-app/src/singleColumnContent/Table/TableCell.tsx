@@ -74,6 +74,9 @@ TableCell.schema = {
   label: 'Cell',
   category: 'single column / blog',
   hideFromAddMenu: true,
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-app/src/singleColumnContent/Table/TableCell.tsx',
 
   getDefaultProps: () => ({
     cellText: '',

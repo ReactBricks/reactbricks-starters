@@ -243,6 +243,9 @@ const FeatureRow: types.Brick<FeatureRowProps> = ({
 FeatureRow.schema = {
   name: 'email-feature-row',
   label: 'Email feature row',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/nextjs-pages/src/features/FeaturesRow.tsx',
   hideFromAddMenu: true,
   getDefaultProps: () => ({
     title: 'Luxurius Retreat',

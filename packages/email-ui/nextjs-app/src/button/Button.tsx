@@ -51,6 +51,9 @@ const EmailButton: types.Brick<ButtonProps> = ({
 EmailButton.schema = {
   name: 'email-button',
   label: 'Email button',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/email-ui/nextjs-app/src/button/Button.tsx',
   hideFromAddMenu: true,
   getDefaultProps: () => ({}),
   sideEditProps: [

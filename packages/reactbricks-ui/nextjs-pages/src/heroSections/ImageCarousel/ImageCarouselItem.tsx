@@ -47,6 +47,9 @@ ImageCarouselItem.schema = {
   name: blockNames.ImageCarouselItem,
   label: 'ImageCarouselItem',
   category: 'hero sections',
+  playgroundLinkLabel: 'View source code on Github',
+  playgroundLinkUrl:
+    'https://github.com/ReactBricks/reactbricks-starters/blob/main/packages/reactbricks-ui/nextjs-pages/src/heroSections/ImageCarousel/ImageCarouselItem.tsx',
   hideFromAddMenu: true,
   getDefaultProps: () => ({
     image: {
