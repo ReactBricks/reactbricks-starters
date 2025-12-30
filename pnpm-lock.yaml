@@ -52,8 +52,8 @@ importers:
         specifier: '>=19'
         version: 19.2.1
       react-bricks:
-        specifier: ^5.0.0-alpha.6
-        version: 5.0.0-alpha.6(@babel/core@7.28.5)(@types/react@19.0.10)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(tailwindcss@4.1.17)
+        specifier: ^5.0.0
+        version: 5.0.0(@babel/core@7.28.5)(@types/react@19.0.10)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(tailwindcss@4.1.17)
       react-dom:
         specifier: '>=19'
         version: 19.2.1(react@19.2.1)
@@ -92,8 +92,8 @@ importers:
         specifier: ^19.0.0
         version: 19.2.1
       react-bricks:
-        specifier: 5.0.0-alpha.6
-        version: 5.0.0-alpha.6(@babel/core@7.28.5)(@types/react@19.0.10)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(tailwindcss@4.1.17)
+        specifier: 5.0.0
+        version: 5.0.0(@babel/core@7.28.5)(@types/react@19.0.10)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(tailwindcss@4.1.17)
       react-dom:
         specifier: ^19.0.0
         version: 19.2.1(react@19.2.1)
@@ -144,8 +144,8 @@ importers:
         specifier: ^19.0.0
         version: 19.2.1
       react-bricks:
-        specifier: 5.0.0-alpha.6
-        version: 5.0.0-alpha.6(@babel/core@7.28.5)(@types/react@19.0.10)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(tailwindcss@4.1.17)
+        specifier: 5.0.0
+        version: 5.0.0(@babel/core@7.28.5)(@types/react@19.0.10)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(tailwindcss@4.1.17)
       react-dom:
         specifier: ^19.0.0
         version: 19.2.1(react@19.2.1)
@@ -350,8 +350,8 @@ importers:
         specifier: ^19
         version: 19.2.1
       react-bricks:
-        specifier: ^5.0.0-alpha.6
-        version: 5.0.0-alpha.6(@babel/core@7.28.5)(@types/react@19.0.10)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(tailwindcss@4.1.17)
+        specifier: ^5.0.0
+        version: 5.0.0(@babel/core@7.28.5)(@types/react@19.0.10)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(tailwindcss@4.1.17)
       react-dom:
         specifier: ^19
         version: 19.2.1(react@19.2.1)
@@ -438,8 +438,8 @@ importers:
         specifier: ^19
         version: 19.2.1
       react-bricks:
-        specifier: ^5.0.0-alpha.6
-        version: 5.0.0-alpha.6(@babel/core@7.28.5)(@types/react@19.0.10)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(tailwindcss@4.1.17)
+        specifier: ^5.0.0
+        version: 5.0.0(@babel/core@7.28.5)(@types/react@19.0.10)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(tailwindcss@4.1.17)
       react-dom:
         specifier: ^19
         version: 19.2.1(react@19.2.1)
@@ -532,8 +532,8 @@ importers:
         specifier: ^19
         version: 19.2.1
       react-bricks:
-        specifier: ^5.0.0-alpha.6
-        version: 5.0.0-alpha.6(@babel/core@7.28.5)(@types/react@19.0.10)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(tailwindcss@4.1.17)
+        specifier: ^5.0.0
+        version: 5.0.0(@babel/core@7.28.5)(@types/react@19.0.10)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(tailwindcss@4.1.17)
       react-dom:
         specifier: ^19
         version: 19.2.1(react@19.2.1)
@@ -4131,6 +4131,12 @@ packages:
     peerDependencies:
       react: ^16.14.0 || ^17 || ^18 || ^19
       react-dom: ^16.14.0 || ^17 || ^18 || ^19
+
+  react-bricks@5.0.0:
+    resolution: {integrity: sha512-fpYYBdTWe6nB2bGj/vwLoMxJIfYV9huxIqHf3UrijdHo7XVGWqXdy2EJ2ZjRXjAhHlz9is+ddjp7H6SQGPpLbQ==}
+    peerDependencies:
+      react: '>=18'
+      react-dom: '>=18'
 
   react-bricks@5.0.0-alpha.6:
     resolution: {integrity: sha512-BRm8Y9n/9egxNnBR9YJFiVub6hJJo31YXPO35zigIg7mFFbCO9+YAMWi51ADzsytsUtGp2pxY6o4KsdP976TAg==}
@@ -9141,6 +9147,61 @@ snapshots:
       react-dom: 19.2.1(react@19.2.1)
       react-overlays: 5.2.1(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
       uncontrollable: 7.2.1(react@19.2.1)
+
+  react-bricks@5.0.0(@babel/core@7.28.5)(@types/react@19.0.10)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(tailwindcss@4.1.17):
+    dependencies:
+      '@headlessui/react': 2.2.9(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+      '@headlessui/tailwindcss': 0.2.2(tailwindcss@4.1.17)
+      '@tanstack/react-query': 5.90.12(react@19.2.1)
+      '@tanstack/react-query-devtools': 5.91.1(@tanstack/react-query@5.90.12(react@19.2.1))(react@19.2.1)
+      axios: 1.13.2
+      classnames: 2.5.1
+      clsx: 2.1.1
+      color: 4.2.3
+      date-fns: 3.6.0
+      html-to-image: 1.11.13
+      immer: 10.2.0
+      intersection-observer: 0.12.2
+      is-hotkey: 0.2.0
+      lodash.debounce: 4.0.8
+      p-limit: 3.1.0
+      rb-react-tiny-popover: 8.1.7(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+      rb-tippyjs-react: 4.3.1(@babel/core@7.28.5)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+      rc-switch: 4.1.0(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+      react: 19.2.1
+      react-big-calendar: 1.19.4(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+      react-dom: 19.2.1(react@19.2.1)
+      react-dropzone: 14.3.8(react@19.2.1)
+      react-error-boundary: 4.1.2(react@19.2.1)
+      react-hook-form: 7.68.0(react@19.2.1)
+      react-icons: 5.5.0(react@19.2.1)
+      react-inlinesvg: 4.2.0(react@19.2.1)
+      react-lazy-load-image-component: 1.6.3(react@19.2.1)
+      react-masonry-css: 1.0.16(react@19.2.1)
+      react-modal: 3.16.3(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+      react-paginate: 8.3.0(react@19.2.1)
+      react-tag-autocomplete: 7.5.1(react@19.2.1)
+      react-toastify: 9.1.3(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
+      remark-gfm: 4.0.1
+      remark-parse: 11.0.0
+      remark-slate-transformer: 0.9.0(unified@11.0.5)
+      remark-stringify: 11.0.0
+      slate: 0.66.5
+      slate-history: 0.66.0(slate@0.66.5)
+      slate-react: 0.66.6(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(slate@0.66.5)
+      socket.io-client: 4.8.1
+      ts-md5: 1.3.1
+      unified: 11.0.5
+      uuid: 11.1.0
+      zustand: 4.5.7(@types/react@19.0.10)(immer@10.2.0)(react@19.2.1)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@types/react'
+      - bufferutil
+      - debug
+      - supports-color
+      - tailwindcss
+      - utf-8-validate
 
   react-bricks@5.0.0-alpha.6(@babel/core@7.28.5)(@types/react@19.0.10)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)(tailwindcss@4.1.17):
     dependencies:
