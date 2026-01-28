@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { cookies } from 'next/headers'
 import {
   JsonLd,
   PageViewer,
@@ -13,6 +14,7 @@ import { ClickToEdit } from 'react-bricks/rsc/client'
 
 import ErrorNoKeys from '@/components/errorNoKeys'
 import ErrorNoPage from '@/components/errorNoPage'
+import { getAbTestingCookie } from '@/lib/abTesting'
 import config from '@/react-bricks/config'
 
 const getData = async (
@@ -46,9 +48,17 @@ const getData = async (
     cleanSlug = slug.join('/')
   }
 
+  const cookieStore = await cookies()
+  const variantNameFromCookie = getAbTestingCookie({
+    slug: cleanSlug,
+    locale,
+    cookieStore,
+  })
+
   const page = await fetchPage({
     slug: cleanSlug,
     language: locale,
+    variantName: variantNameFromCookie,
     config,
     fetchOptions: { next: { revalidate: 3 } },
   }).catch(() => {
