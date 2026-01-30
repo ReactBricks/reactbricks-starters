@@ -31,15 +31,15 @@ export async function getStaticPaths() {
 }
 
 const { lang, slug = '/' } = Astro.params
+const abTestVariant = Astro.locals.abTestVariant
 
 const page = await fetchPage({
-  slug: slug,
+  slug,
   language: lang,
+  ...(abTestVariant ? { variantName: abTestVariant } : {}),
   config,
 })
 
-// Clean the received content
-// Removes unknown or not allowed bricks
 const bricks = getBricks()
 const pageOk = page ? cleanPage(page, config.pageTypes || [], bricks) : null
 
@@ -49,10 +49,10 @@ if (!pageOk) {
 ---
 
 <BaseLayout lang={lang}>
-  <Fragment slot="head">
+  <Fragment slot='head'>
     <title>{pageOk?.meta.title || ''}</title>
     <meta
-      name="description"
+      name='description'
       content={pageOk?.meta.description || pageOk?.meta.title || ''}
     />
   </Fragment>

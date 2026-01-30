@@ -17,7 +17,7 @@ const { title, lang, slug, content, author, date, featuredImg } = Astro.props
 ---
 
 <a
-  href={getLocaleUrl(lang, `/blog/post/${slug}`)}
+  href={getLocaleUrl(lang, slug)}
   class="flex flex-col hover:-translate-y-2 transition-transform duration-300"
 >
   {

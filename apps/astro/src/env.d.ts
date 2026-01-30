@@ -11,6 +11,7 @@ interface ImportMeta {
 declare namespace App {
   interface Locals {
     isRewrite?: boolean
+    abTestVariant?: string
   }
 }
 
