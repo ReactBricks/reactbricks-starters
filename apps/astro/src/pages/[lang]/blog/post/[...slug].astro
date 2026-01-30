@@ -1,6 +1,8 @@
 ---
 import { locales } from '@/i18n/conf'
 import BaseLayout from '@/layouts/BaseLayout.astro'
+import { BLOG_SLUG_PREFIX } from '@/react-bricks/pageTypes'
+import { pathHasLocale } from 'astro:i18n'
 import { getBricks, reactBricksAstroStore } from 'react-bricks/astro'
 import PageViewer from 'react-bricks/astro/PageViewer.astro'
 import { cleanPage, fetchPage, fetchPages } from 'react-bricks/astro/server'
@@ -22,21 +24,23 @@ export async function getStaticPaths() {
       page.translations.map((translation) => ({
         params: {
           lang: translation.language,
-          slug: translation.slug,
+          slug: translation.slug.replace(BLOG_SLUG_PREFIX, ''),
         },
       }))
     )
     .flat()
     .filter((path) => locales.includes(path.params.lang))
-
+  console.log({ allPages, paths })
   return paths
 }
 
 const { lang, slug = '/' } = Astro.params
+const abTestVariant = Astro.locals.abTestVariant
 
 const page = await fetchPage({
-  slug: slug,
+  slug: `${BLOG_SLUG_PREFIX}${slug}`,
   language: lang,
+  ...(abTestVariant ? { variantName: abTestVariant } : {}),
   config,
 })
 
