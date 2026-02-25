@@ -29,7 +29,7 @@
   "peerDependencies": {
     "astro": "^5.6.1",
     "react": "^19",
-    "react-bricks": "5.0.0-alpha.7",
+    "react-bricks": "^5.0.0",
     "react-dom": "^19"
   },
   "dependencies": {
@@ -38,13 +38,13 @@
   },
   "devDependencies": {
     "@types/jsonp": "^0.2.3",
-    "@types/node": "^20",
+    "@types/node": "^22.19.11",
     "@types/react": "19.0.10",
     "@types/react-dom": "^19.0.4",
-    "eslint": "^9.22.0",
-    "eslint-config-next": "15.2.2",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.0.14",
-    "typescript": "^5"
+    "eslint": "^10.0.2",
+    "eslint-config-next": "16.1.6",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.2.1",
+    "typescript": "^5.9.3"
   }
 }
