@@ -228,7 +228,7 @@ FormBuilder.schema = {
 
               return [
                 { value: '', label: '--Select Form--' },
-                ...items.map((item) => ({
+                ...items.map((item: any) => ({
                   value: item.id,
                   label: item.name,
                 })),
