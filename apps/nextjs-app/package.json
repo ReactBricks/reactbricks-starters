@@ -13,19 +13,19 @@
   "dependencies": {
     "@reactbricks/reactbricks-ui-rsc": "workspace:*",
     "dayjs": "^1.11.13",
-    "next": "^15.5.9",
+    "next": "^15.5.12",
     "next-themes": "^0.4.6",
     "react": "^19.0.0",
-    "react-bricks": "5.0.0",
+    "react-bricks": "^5.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.0.14",
-    "@types/node": "^20",
-    "@types/react": "^19.0.10",
+    "@types/node": "^22.19.11",
+    "@types/react": "19.0.10",
     "@types/react-dom": "^19.0.4",
     "eslint": "^9.22.0",
-    "eslint-config-next": "15.2.8",
+    "eslint-config-next": "15.2.9",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.5",
     "typescript": "^5"
