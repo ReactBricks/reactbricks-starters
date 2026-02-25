@@ -85,7 +85,7 @@ const Page: React.FC<PageProps> = ({
                   <PostListItem
                     key={post.id}
                     title={post.meta.title || ''}
-                    href={post.slug}
+                    slug={post.slug}
                     content={post.meta.description || ''}
                     author={post.author}
                     date={post.publishedAt || ''}

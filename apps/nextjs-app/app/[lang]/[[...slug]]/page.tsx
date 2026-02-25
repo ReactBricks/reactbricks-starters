@@ -6,6 +6,7 @@ import {
   cleanPage,
   fetchPage,
   fetchPages,
+  getAbTestingCookie,
   getBricks,
   getMetadata,
   types,
@@ -14,8 +15,8 @@ import { ClickToEdit } from 'react-bricks/rsc/client'
 
 import ErrorNoKeys from '@/components/errorNoKeys'
 import ErrorNoPage from '@/components/errorNoPage'
-import { getAbTestingCookie } from '@/lib/abTesting'
 import config from '@/react-bricks/config'
+import GAExperimentTracker from '@/components/GAExperimentTracker'
 
 const getData = async (
   slug: any,
@@ -24,6 +25,8 @@ const getData = async (
   page: types.Page | null
   errorNoKeys: boolean
   errorPage: boolean
+  variantName?: string
+  testName?: string
 }> => {
   let errorNoKeys: boolean = false
   let errorPage: boolean = false
@@ -70,6 +73,8 @@ const getData = async (
     page,
     errorNoKeys,
     errorPage,
+    variantName: variantNameFromCookie,
+    testName: `${cleanSlug}_${locale}`,
   }
 }
 
@@ -114,7 +119,7 @@ export default async function Page(props: {
   params: Promise<{ lang: string; slug?: string[] }>
 }) {
   const params = await props.params
-  const { page, errorNoKeys, errorPage } = await getData(
+  const { page, errorNoKeys, errorPage, variantName, testName } = await getData(
     params.slug?.join('/'),
     params.lang
   )
@@ -129,6 +134,9 @@ export default async function Page(props: {
       {page?.meta && <JsonLd page={page}></JsonLd>}
       {pageOk && !errorPage && !errorNoKeys && (
         <PageViewer page={pageOk} main />
+      )}
+      {testName && variantName && (
+        <GAExperimentTracker testName={testName} variantName={variantName} />
       )}
       {errorNoKeys && <ErrorNoKeys />}
       {errorPage && <ErrorNoPage />}

@@ -6,6 +6,7 @@ import {
   register,
   types,
 } from 'react-bricks/rsc'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 import ReactBricksApp from '@/components/ReactBricksApp'
 import ErrorNoFooter from '@/components/errorNoFooter'
@@ -100,6 +101,9 @@ export default async function Layout(props: {
   return (
     <html lang={params.lang} suppressHydrationWarning>
       <body className={`font-sans dark:bg-gray-900 antialiased`}>
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+        )}
         <ThemeProvider
           attribute="class"
           storageKey="color-mode"

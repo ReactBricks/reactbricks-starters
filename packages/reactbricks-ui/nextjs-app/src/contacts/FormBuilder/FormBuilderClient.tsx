@@ -130,7 +130,7 @@ const FormBuilderClient: React.FC<FormBuilderClientProps> = ({
       throw submissionError
     }
   }
-  console.log('SUBMITTED - ', formId)
+  // console.log('SUBMITTED - ', formId)
 
   if (!register || !handleSubmit) {
     return null

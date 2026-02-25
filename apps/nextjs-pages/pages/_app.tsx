@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { ThemeProvider } from 'next-themes'
 import type { AppProps } from 'next/app'
 import ReactBricksApp from '../components/ReactBricksApp'
@@ -12,6 +13,9 @@ const MyApp = (props: AppProps) => {
       enableSystem={false}
       defaultTheme="light"
     >
+      {process.env.NEXT_PUBLIC_GA_ID && (
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+      )}
       <ReactBricksApp {...props}></ReactBricksApp>
     </ThemeProvider>
   )

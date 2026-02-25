@@ -1,22 +1,24 @@
 import { GetServerSideProps } from 'next'
 import Head from 'next/head'
+import { ReactNode } from 'react'
 import {
   PageViewer,
   cleanPage,
   fetchPage,
+  getAbTestingCookie,
   renderJsonLd,
   renderMeta,
   types,
   useReactBricksContext,
 } from 'react-bricks/frontend'
 
-import { ReactNode } from 'react'
 import ErrorNoFooter from '../../../components/errorNoFooter'
 import ErrorNoHeader from '../../../components/errorNoHeader'
 import ErrorNoKeys from '../../../components/errorNoKeys'
+import GAExperimentTracker from '../../../components/GAExperimentTracker'
 import Layout from '../../../components/layout'
-import { AB_TEST_VARIANT_HEADER } from '../../../middleware'
 import config from '../../../react-bricks/config'
+import { BLOG_SLUG_PREFIX } from '../../../react-bricks/pageTypes'
 
 interface PageProps {
   page: types.Page
@@ -26,6 +28,8 @@ interface PageProps {
   errorNoKeys: string
   errorHeader: string
   errorFooter: string
+  variantName?: string
+  testName?: string
 }
 
 const Page: React.FC<PageProps> = ({
@@ -36,6 +40,8 @@ const Page: React.FC<PageProps> = ({
   errorPage,
   errorHeader,
   errorFooter,
+  variantName,
+  testName,
 }) => {
   // Clean the received content
   // Removes unknown or not allowed bricks
@@ -46,6 +52,9 @@ const Page: React.FC<PageProps> = ({
 
   return (
     <Layout>
+      {variantName && testName && (
+        <GAExperimentTracker testName={testName} variantName={variantName} />
+      )}
       {pageOk && !errorPage && !errorNoKeys && (
         <>
           <Head>
@@ -105,14 +114,17 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
   const locale = context.locale || 'en'
 
-  const variantName =
-    (context.req.headers[AB_TEST_VARIANT_HEADER] as string) || undefined
+  const variantNameFromCookie = getAbTestingCookie({
+    slug: `${BLOG_SLUG_PREFIX}${cleanSlug}`,
+    locale,
+    cookies: context.req.cookies,
+  })
 
   const [page, header, footer] = await Promise.all([
     fetchPage({
-      slug: cleanSlug,
+      slug: `${BLOG_SLUG_PREFIX}${cleanSlug}`,
       language: locale,
-      variantName,
+      variantName: variantNameFromCookie,
       config,
     }).catch(() => {
       errorPage = true
@@ -133,7 +145,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
   ])
 
   // When no A/B variant is active, allow CDN caching (SSG-like behavior)
-  if (!variantName) {
+  if (!variantNameFromCookie) {
     context.res.setHeader(
       'Cache-Control',
       'public, s-maxage=3600, stale-while-revalidate=60'
@@ -149,6 +161,12 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
       errorPage,
       errorHeader,
       errorFooter,
+      ...(variantNameFromCookie
+        ? {
+            variantName: variantNameFromCookie,
+            testName: `${cleanSlug}_${locale}`,
+          }
+        : {}),
     },
   }
 }

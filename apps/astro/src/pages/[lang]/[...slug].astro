@@ -1,5 +1,6 @@
 ---
 import { locales } from '@/i18n/conf'
+import GAExperimentTracker from '@/components/GAExperimentTracker'
 import BaseLayout from '@/layouts/BaseLayout.astro'
 import { getBricks, reactBricksAstroStore } from 'react-bricks/astro'
 import PageViewer from 'react-bricks/astro/PageViewer.astro'
@@ -32,6 +33,7 @@ export async function getStaticPaths() {
 
 const { lang, slug = '/' } = Astro.params
 const abTestVariant = Astro.locals.abTestVariant
+const testName = `${slug}_${lang}`
 
 const page = await fetchPage({
   slug,
@@ -49,13 +51,23 @@ if (!pageOk) {
 ---
 
 <BaseLayout lang={lang}>
-  <Fragment slot='head'>
+  <Fragment slot="head">
     <title>{pageOk?.meta.title || ''}</title>
     <meta
-      name='description'
+      name="description"
       content={pageOk?.meta.description || pageOk?.meta.title || ''}
     />
   </Fragment>
 
   <PageViewer page={pageOk} main />
+
+  {
+    abTestVariant && (
+      <GAExperimentTracker
+        testName={testName}
+        variantName={abTestVariant}
+        client:only="react"
+      />
+    )
+  }
 </BaseLayout>

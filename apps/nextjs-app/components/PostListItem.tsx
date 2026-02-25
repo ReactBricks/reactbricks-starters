@@ -5,7 +5,7 @@ import { Image, types } from 'react-bricks/rsc'
 
 interface PostListItemProps {
   title: string
-  href: string
+  slug: string
   content: string
   author: types.Author
   date: string
@@ -14,7 +14,7 @@ interface PostListItemProps {
 
 const PostListItem: React.FC<PostListItemProps> = ({
   title,
-  href,
+  slug,
   content,
   author,
   date,
@@ -22,7 +22,7 @@ const PostListItem: React.FC<PostListItemProps> = ({
 }) => {
   return (
     <Link
-      href={`/blog/post/${href}`}
+      href={slug}
       className="flex flex-col hover:-translate-y-2 transition-transform duration-300"
     >
       {featuredImg && (

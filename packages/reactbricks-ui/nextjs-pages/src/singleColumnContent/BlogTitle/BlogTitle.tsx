@@ -66,9 +66,9 @@ const BlogTitle: types.Brick<BlogTitleProps> = ({
         />
 
         <div className="flex items-center space-x-2">
-          {pageValues.author.avatarUrl ? (
+          {pageValues.author?.avatarUrl ? (
             <img
-              src={pageValues.author.avatarUrl}
+              src={pageValues.author?.avatarUrl}
               alt="Author"
               className="rounded-full w-10 h-10"
             />
@@ -82,8 +82,8 @@ const BlogTitle: types.Brick<BlogTitleProps> = ({
                 textColors.GRAY_800
               )}
             >
-              {pageValues.author.firstName || 'John'}{' '}
-              {pageValues.author.lastName || 'Doe'}
+              {pageValues.author?.firstName || 'John'}{' '}
+              {pageValues.author?.lastName || 'Doe'}
             </div>
             <div
               className={classNames(

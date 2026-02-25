@@ -1,5 +1,6 @@
 ---
 import { locales } from '@/i18n/conf'
+import GAExperimentTracker from '@/components/GAExperimentTracker'
 import BaseLayout from '@/layouts/BaseLayout.astro'
 import { BLOG_SLUG_PREFIX } from '@/react-bricks/pageTypes'
 import { pathHasLocale } from 'astro:i18n'
@@ -30,12 +31,13 @@ export async function getStaticPaths() {
     )
     .flat()
     .filter((path) => locales.includes(path.params.lang))
-  console.log({ allPages, paths })
+
   return paths
 }
 
 const { lang, slug = '/' } = Astro.params
 const abTestVariant = Astro.locals.abTestVariant
+const testName = `${BLOG_SLUG_PREFIX}${slug}_${lang}`
 
 const page = await fetchPage({
   slug: `${BLOG_SLUG_PREFIX}${slug}`,
@@ -73,4 +75,14 @@ if (!pageOk) {
   </style>
 
   <PageViewer page={pageOk} main />
+
+  {
+    abTestVariant && (
+      <GAExperimentTracker
+        testName={testName}
+        variantName={abTestVariant}
+        client:only="react"
+      />
+    )
+  }
 </BaseLayout>
