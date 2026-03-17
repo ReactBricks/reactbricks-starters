@@ -1,5 +1,16 @@
 # @reactbricks/nextjs-app
 
+## 0.1.0-alpha.4
+
+### Minor Changes
+
+- a6b9eb5: Update dependencies; update form bricks.
+
+### Patch Changes
+
+- Updated dependencies [a6b9eb5]
+  - @reactbricks/reactbricks-ui-rsc@0.1.0-alpha.4
+
 ## 0.0.1-alpha.3
 
 ### Patch Changes

@@ -1,5 +1,16 @@
 # @reactbricks/reactbricks-ui-astro
 
+## 0.1.0-alpha.6
+
+### Minor Changes
+
+- a6b9eb5: Update dependencies; update form bricks.
+
+### Patch Changes
+
+- Updated dependencies [a6b9eb5]
+  - @reactbricks/reactbricks-ui-tailwind-config@0.1.0-alpha.4
+
 ## 0.1.0-alpha.5
 
 ### Minor Changes

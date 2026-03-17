@@ -1,5 +1,11 @@
 # @reactbricks/email-ui
 
+## 0.1.0-alpha.3
+
+### Minor Changes
+
+- a6b9eb5: Update dependencies; update form bricks.
+
 ## 0.1.0-alpha.2
 
 ### Minor Changes

@@ -2,7 +2,7 @@
   "name": "@reactbricks/nextjs-app",
   "private": true,
   "license": "SEE LICENSE IN LICENSE",
-  "version": "0.0.1-alpha.3",
+  "version": "0.1.0-alpha.4",
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
