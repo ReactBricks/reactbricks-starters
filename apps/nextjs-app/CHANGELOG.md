@@ -1,5 +1,13 @@
 # @reactbricks/nextjs-app
 
+## 0.1.1
+
+### Patch Changes
+
+- Update react-bricks dependency
+- Updated dependencies
+  - @reactbricks/reactbricks-ui-rsc@0.1.1
+
 ## 0.1.0
 
 ### Minor Changes

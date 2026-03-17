@@ -1,5 +1,11 @@
 # @reactbricks/email-ui-rsc
 
+## 0.1.1
+
+### Patch Changes
+
+- Update react-bricks dependency
+
 ## 0.1.0
 
 ### Minor Changes
