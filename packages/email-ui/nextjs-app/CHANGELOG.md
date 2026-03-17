@@ -1,5 +1,18 @@
 # @reactbricks/email-ui-rsc
 
+## 0.1.0
+
+### Minor Changes
+
+- f42b043: Fix css export
+- f42b043: New starters for React Bricks V5
+- a6b9eb5: Update dependencies; update form bricks.
+
+### Patch Changes
+
+- Update dependencies
+- f42b043: Add README.md file
+
 ## 0.1.0-alpha.3
 
 ### Minor Changes
