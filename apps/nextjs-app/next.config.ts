@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   transpilePackages: [
-    '@reactbricks/reactbricks-ui',
-    // '@reactbricks/email-ui' <<EMAIL_BRICKS>>
+    '@reactbricks/reactbricks-ui-rsc',
+    // '@reactbricks/email-ui-rsc' <<EMAIL_BRICKS>>
   ],
   reactStrictMode: false,
 }
