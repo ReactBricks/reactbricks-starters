@@ -1,5 +1,11 @@
 # @reactbricks/email-ui-rsc
 
+## 0.2.0
+
+### Minor Changes
+
+- Change category name
+
 ## 0.1.1
 
 ### Patch Changes
