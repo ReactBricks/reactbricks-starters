@@ -29,7 +29,7 @@ const allBricks: types.Theme = {
   themeName: 'React Bricks Email',
   categories: [
     {
-      categoryName: 'Main content',
+      categoryName: 'Email marketing',
       bricks: [
         ArticleAuthors,
         ArticleAuthor,
