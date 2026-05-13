@@ -4,7 +4,6 @@ const serverConfig = {
   appId: process.env.NEXT_PUBLIC_APP_ID || '',
   apiKey: process.env.API_KEY || '',
   environment: process.env.NEXT_PUBLIC_ENVIRONMENT,
-  apiPrefix: 'staging',
   bricks: [],
   pageTypes: [],
 } as unknown as types.ReactBricksConfig

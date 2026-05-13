@@ -39,7 +39,6 @@ const config: types.ReactBricksConfig = {
   enablePreviewImage: true,
   enableDefaultEmbedBrick: true,
   //permissions,  Fine-grained permissions for enterprise plans
-  apiPrefix: 'staging',
 }
 
 // Enable only for Enterprise plans with the A/B testing module active.
