@@ -104,12 +104,18 @@ importers:
       '@types/node':
         specifier: ^22.19.11
         version: 22.19.12
+      '@types/prismjs':
+        specifier: ^1.26.6
+        version: 1.26.6
       '@types/react':
         specifier: 19.0.10
         version: 19.0.10
       '@types/react-dom':
         specifier: 19.0.4
         version: 19.0.4(@types/react@19.0.10)
+      '@types/react-slick':
+        specifier: ^0.23.13
+        version: 0.23.13
       eslint:
         specifier: ^9.22.0
         version: 9.39.3(jiti@2.6.1)
@@ -156,12 +162,18 @@ importers:
       '@types/node':
         specifier: ^22.19.11
         version: 22.19.12
+      '@types/prismjs':
+        specifier: ^1.26.6
+        version: 1.26.6
       '@types/react':
         specifier: 19.0.10
         version: 19.0.10
       '@types/react-dom':
         specifier: 19.0.4
         version: 19.0.4(@types/react@19.0.10)
+      '@types/react-slick':
+        specifier: ^0.23.13
+        version: 0.23.13
       postcss:
         specifier: ^8.5.3
         version: 8.5.6
