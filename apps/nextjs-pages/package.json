@@ -13,7 +13,7 @@
     "@next/third-parties": "^16.1.6",
     "@reactbricks/reactbricks-ui": "workspace:*",
     "dayjs": "^1.11.13",
-    "next": "^15.5.12",
+    "next": "^15.5.18",
     "next-themes": "^0.4.6",
     "react": "^19.0.0",
     "react-bricks": "5.1.0",

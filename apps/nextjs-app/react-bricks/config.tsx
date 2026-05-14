@@ -1,9 +1,8 @@
-import React from 'react'
 import { types } from 'react-bricks/rsc'
 
 import bricks from './bricks'
-import pageTypes from './pageTypes'
 import NextLink from './NextLink'
+import pageTypes from './pageTypes'
 
 // Enable only for Enterprise plans with the A/B testing module active.
 export const abTestingEnabled = true
