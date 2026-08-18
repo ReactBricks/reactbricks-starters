@@ -2,7 +2,7 @@
   "name": "@reactbricks/astro",
   "private": true,
   "license": "SEE LICENSE IN LICENSE",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
