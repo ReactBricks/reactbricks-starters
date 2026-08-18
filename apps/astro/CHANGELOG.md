@@ -1,5 +1,11 @@
 # @reactbricks/astro
 
+## 0.2.1
+
+### Patch Changes
+
+- Add AI page to Admin folder
+
 ## 0.2.0
 
 ### Minor Changes
