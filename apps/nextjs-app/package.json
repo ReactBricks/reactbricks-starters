@@ -2,7 +2,7 @@
   "name": "@reactbricks/nextjs-app",
   "private": true,
   "license": "SEE LICENSE IN LICENSE",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
@@ -17,7 +17,7 @@
     "next": "^15.5.18",
     "next-themes": "^0.4.6",
     "react": "^19.0.0",
-    "react-bricks": "5.1.0",
+    "react-bricks": "5.2.1",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {

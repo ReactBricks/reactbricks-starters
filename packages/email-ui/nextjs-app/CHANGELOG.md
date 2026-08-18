@@ -1,5 +1,11 @@
 # @reactbricks/email-ui-rsc
 
+## 0.3.0
+
+### Minor Changes
+
+- Update to React Bricks version 5.2.1
+
 ## 0.2.1
 
 ### Patch Changes

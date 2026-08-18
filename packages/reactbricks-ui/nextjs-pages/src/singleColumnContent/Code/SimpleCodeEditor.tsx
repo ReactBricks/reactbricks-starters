@@ -425,8 +425,8 @@ export default class Editor extends React.Component<Props, State> {
       (isMacLike // Trigger redo with ⌘+Shift+Z on Mac
         ? e.metaKey && e.keyCode === KEYCODE_Z && e.shiftKey
         : isWindows // Trigger redo with Ctrl+Y on Windows
-        ? e.ctrlKey && e.keyCode === KEYCODE_Y // Trigger redo with Ctrl+Shift+Z on other platforms
-        : e.ctrlKey && e.keyCode === KEYCODE_Z && e.shiftKey) &&
+          ? e.ctrlKey && e.keyCode === KEYCODE_Y // Trigger redo with Ctrl+Shift+Z on other platforms
+          : e.ctrlKey && e.keyCode === KEYCODE_Z && e.shiftKey) &&
       !e.altKey
     ) {
       e.preventDefault()
@@ -505,7 +505,6 @@ export default class Editor extends React.Component<Props, State> {
 
       /* eslint-enable no-unused-vars */
       preClassName,
-
     } = this.props
 
     const contentStyle = {

@@ -1,5 +1,16 @@
 # @reactbricks/nextjs-pages
 
+## 0.2.0
+
+### Minor Changes
+
+- Update to React Bricks version 5.2.1
+
+### Patch Changes
+
+- Updated dependencies
+  - @reactbricks/reactbricks-ui@0.2.0
+
 ## 0.1.1
 
 ### Patch Changes

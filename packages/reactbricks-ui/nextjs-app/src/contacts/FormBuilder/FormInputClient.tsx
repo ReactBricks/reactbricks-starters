@@ -78,16 +78,16 @@ const FormInputClient: React.FC<FormInputProps> = ({
           valueAsDate: false,
         }
       : inputType === 'date'
-      ? {
-          pattern: undefined,
-          valueAsNumber: false,
-          valueAsDate: true,
-        }
-      : {
-          pattern: strToRegex(pattern),
-          valueAsNumber: false,
-          valueAsDate: false,
-        }
+        ? {
+            pattern: undefined,
+            valueAsNumber: false,
+            valueAsDate: true,
+          }
+        : {
+            pattern: strToRegex(pattern),
+            valueAsNumber: false,
+            valueAsDate: false,
+          }
 
   const registerAttributes = fieldName
     ? register(fieldName?.replace(/\s/g, '').toLowerCase(), {
