@@ -27,7 +27,7 @@
   },
   "peerDependencies": {
     "react": "^19",
-    "react-bricks": "5.1.0",
+    "react-bricks": "5.2.1",
     "react-dom": "^19"
   },
   "dependencies": {
