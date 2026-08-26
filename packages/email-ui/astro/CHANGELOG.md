@@ -1,5 +1,11 @@
 # @reactbricks/email-ui-astro
 
+## 0.3.1
+
+### Patch Changes
+
+- Update to React Bricks version 5.3.0
+
 ## 0.3.0
 
 ### Minor Changes
