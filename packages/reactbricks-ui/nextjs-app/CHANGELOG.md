@@ -1,5 +1,11 @@
 # @reactbricks/reactbricks-ui-rsc
 
+## 0.2.1
+
+### Patch Changes
+
+- Update to React Bricks version 5.3.0
+
 ## 0.2.0
 
 ### Minor Changes

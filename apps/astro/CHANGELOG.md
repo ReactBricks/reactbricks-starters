@@ -1,5 +1,13 @@
 # @reactbricks/astro
 
+## 0.2.2
+
+### Patch Changes
+
+- Update to React Bricks version 5.3.0
+- Updated dependencies
+  - @reactbricks/reactbricks-ui-astro@0.2.1
+
 ## 0.2.1
 
 ### Patch Changes
