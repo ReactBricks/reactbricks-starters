@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server'
 
 import { i18n } from './i18n-config'
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   // Check if there is any supported locale in the pathname
   const pathname = request.nextUrl.pathname
 

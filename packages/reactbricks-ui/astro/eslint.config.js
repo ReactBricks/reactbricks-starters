@@ -1,10 +1,6 @@
-// Flat config for ESLint v9, equivalent to `extends: "next/core-web-vitals"`
-// Uses FlatCompat to bridge legacy shareable config
+// Flat config: eslint-config-next 16 ships native flat configs
 
-const { FlatCompat } = require('@eslint/eslintrc')
-const path = require('path')
-
-const compat = new FlatCompat({ baseDirectory: __dirname })
+const nextVitals = require('eslint-config-next/core-web-vitals')
 
 module.exports = [
   // Ignore common build artifacts
@@ -12,6 +8,6 @@ module.exports = [
     ignores: ['node_modules/**', 'dist/**', 'build/**', '.turbo/**'],
   },
 
-  // Bring in Next.js recommended + Core Web Vitals rules
-  ...compat.extends('next/core-web-vitals'),
+  // Next.js recommended + Core Web Vitals rules
+  ...nextVitals,
 ]

@@ -81,7 +81,7 @@ export async function generateStaticParams({
     config,
   })
 
-  return tags
+  return tags.map((tag) => ({ tag }))
 }
 
 export async function generateMetadata(props: {
