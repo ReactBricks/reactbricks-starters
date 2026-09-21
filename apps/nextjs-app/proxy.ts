@@ -14,11 +14,9 @@ const withAbTestingMiddleware = createWithAbTestingMiddleware({
 })
 const withI18nMiddleware = createI18nMiddleware({ i18n, NextResponse })
 
-const middleware = abTestingEnabled
+export const proxy = abTestingEnabled
   ? chain([withAbTestingMiddleware, withI18nMiddleware])
   : withI18nMiddleware
-
-export default middleware
 
 export const config = {
   // Matcher ignoring `/_next/` and `/api/`
