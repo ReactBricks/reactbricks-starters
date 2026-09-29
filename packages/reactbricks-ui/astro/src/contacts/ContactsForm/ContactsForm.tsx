@@ -13,7 +13,7 @@ import {
 import Container from '../../shared/components/Container'
 import Section from '../../shared/components/Section'
 import TitleSubtitle from '../../shared/components/TitleSubtitle'
-import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
+import CaptchaProvider from '../../shared/Captcha/CaptchaProvider'
 
 export interface ContactsFormProps extends LayoutProps {
   phoneNumber: types.TextValue
@@ -38,6 +38,7 @@ const ContactsForm: types.Brick<ContactsFormProps> = ({
   subtitle,
 }) => {
   const reCaptchaKey = import.meta.env.PUBLIC_RECAPTCHA_KEY || ''
+  const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || ''
 
   return (
     <Section
@@ -111,9 +112,12 @@ const ContactsForm: types.Brick<ContactsFormProps> = ({
             </ul>
           </div>
           <div className="sm:-mt-7">
-            <GoogleReCaptchaProvider reCaptchaKey={reCaptchaKey}>
+            <CaptchaProvider
+              reCaptchaKey={reCaptchaKey}
+              turnstileSiteKey={turnstileSiteKey}
+            >
               <Repeater propName="form" items={form} />
-            </GoogleReCaptchaProvider>
+            </CaptchaProvider>
           </div>
         </div>
       </Container>

@@ -9,7 +9,7 @@ import {
 } from '../../LayoutSideProps'
 import Container from '../../shared/components/Container'
 import Section from '../../shared/components/Section'
-import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
+import CaptchaProvider from '../../shared/Captcha/CaptchaProvider'
 
 export interface FormSectionProps extends LayoutProps {
   form: types.RepeaterItems
@@ -25,6 +25,7 @@ const FormSection: types.Brick<FormSectionProps> = ({
   form,
 }) => {
   const reCaptchaKey = process.env.NEXT_PUBLIC_RECAPTCHA_KEY || ''
+  const turnstileSiteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || ''
 
   return (
     <div>
@@ -38,9 +39,12 @@ const FormSection: types.Brick<FormSectionProps> = ({
           paddingTop={paddingTop}
           paddingBottom={paddingBottom}
         >
-          <GoogleReCaptchaProvider reCaptchaKey={reCaptchaKey}>
+          <CaptchaProvider
+            reCaptchaKey={reCaptchaKey}
+            turnstileSiteKey={turnstileSiteKey}
+          >
             <Repeater propName="form" items={form} />
-          </GoogleReCaptchaProvider>
+          </CaptchaProvider>
         </Container>
       </Section>
     </div>

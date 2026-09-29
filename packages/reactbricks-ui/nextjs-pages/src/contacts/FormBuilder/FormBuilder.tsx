@@ -10,11 +10,11 @@ import { useForm } from 'react-hook-form'
 import blockNames from '../../blockNames'
 import { buttonColors } from '../../colors'
 import { LayoutProps } from '../../LayoutSideProps'
-import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
 import {
   createSubmissionError,
   FormSubmissionError,
 } from '../../shared/FormNewsletter/NewsletterUtils'
+import { useCaptcha } from '../../shared/Captcha/CaptchaProvider'
 
 export interface FormBuilderProps extends LayoutProps {
   buttonPosition: string
@@ -38,34 +38,34 @@ const FormBuilder: types.Brick<FormBuilderProps> = ({
     setError,
   } = useForm()
 
-  const { executeRecaptcha } = useGoogleReCaptcha()
+  const { executeCaptcha } = useCaptcha()
   const rbContext = useReactBricksContext()
 
   const onSubmit = async ({ email, ...data }: any) => {
     try {
-      if (!executeRecaptcha) {
+      if (!executeCaptcha) {
         throw createSubmissionError(
-          'recaptchaUnavailable',
-          'reCAPTCHA is not available. Please reload the page and try again.'
+          'captchaUnavailable',
+          'CAPTCHA is not available. Please reload the page and try again.'
         )
       }
 
       let token: string | undefined
       try {
-        token = await executeRecaptcha('form_submit')
+        token = await executeCaptcha('form_submit')
       } catch (err) {
         console.log(err)
         throw createSubmissionError(
-          'recaptchaExecution',
-          'Failed to execute reCAPTCHA. Please try again.',
+          'captchaExecution',
+          'Failed to execute CAPTCHA. Please try again.',
           err
         )
       }
 
       if (!token) {
         throw createSubmissionError(
-          'recaptchaToken',
-          'Failed to verify reCAPTCHA token. Please try again.'
+          'captchaToken',
+          'Failed to verify CAPTCHA token. Please try again.'
         )
       }
 

@@ -11,7 +11,7 @@ import blockNames from '../../blockNames'
 import Container from '../../shared/components/Container'
 import Section from '../../shared/components/Section'
 
-import ReCaptchaProvider from './ReCaptchaProvider'
+import CaptchaProvider from '../../shared/Captcha/CaptchaProvider'
 
 export interface FormSectionProps extends LayoutProps {
   form: types.RepeaterItems
@@ -27,6 +27,7 @@ const FormSection: types.Brick<FormSectionProps> = ({
   form,
 }) => {
   const reCaptchaKey = process.env.NEXT_PUBLIC_RECAPTCHA_KEY || ''
+  const turnstileSiteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || ''
 
   return (
     <div>
@@ -40,9 +41,12 @@ const FormSection: types.Brick<FormSectionProps> = ({
           paddingTop={paddingTop}
           paddingBottom={paddingBottom}
         >
-          <ReCaptchaProvider reCaptchaKey={reCaptchaKey}>
+          <CaptchaProvider
+            reCaptchaKey={reCaptchaKey}
+            turnstileSiteKey={turnstileSiteKey}
+          >
             <Repeater propName="form" items={form} />
-          </ReCaptchaProvider>
+          </CaptchaProvider>
         </Container>
       </Section>
     </div>

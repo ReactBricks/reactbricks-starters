@@ -340,6 +340,9 @@ importers:
 
   packages/reactbricks-ui/astro:
     dependencies:
+      '@marsidev/react-turnstile':
+        specifier: ^1.6.1
+        version: 1.6.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@reactbricks/reactbricks-ui-tailwind-config':
         specifier: workspace:*
         version: link:../../reactbricks-ui-tailwind-config
@@ -419,6 +422,9 @@ importers:
 
   packages/reactbricks-ui/nextjs-app:
     dependencies:
+      '@marsidev/react-turnstile':
+        specifier: ^1.6.1
+        version: 1.6.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@reactbricks/reactbricks-ui-tailwind-config':
         specifier: workspace:*
         version: link:../../reactbricks-ui-tailwind-config
@@ -516,6 +522,9 @@ importers:
 
   packages/reactbricks-ui/nextjs-pages:
     dependencies:
+      '@marsidev/react-turnstile':
+        specifier: ^1.6.1
+        version: 1.6.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@reactbricks/reactbricks-ui-tailwind-config':
         specifier: workspace:*
         version: link:../../reactbricks-ui-tailwind-config
@@ -1540,6 +1549,12 @@ packages:
     resolution: {integrity: sha512-uwPAhccfFJlsfCxMYTwOdVfOz3xqyj8xYL3zJj8f0pb30tLohnnFPhLuqp4/qoEz8sNxe4SESZedcBojRefIzg==}
     engines: {node: '>=18'}
     hasBin: true
+
+  '@marsidev/react-turnstile@1.6.1':
+    resolution: {integrity: sha512-ojI9NLYv821IRKi7KraTkxTto6KC/m58hNNyKxvYxm/cQBu5MI5eMkaiJs2JSQBFiXE3LPQI3seJVjv/2lgALA==}
+    peerDependencies:
+      react: ^17.0.2 || ^18.0.0 || ^19.0
+      react-dom: ^17.0.2 || ^18.0.0 || ^19.0
 
   '@napi-rs/wasm-runtime@0.2.12':
     resolution: {integrity: sha512-ZVWUcfwY4E/yPitQJl481FjFo3K22D6qF0DuFH6Y/nbnE11GY5uguDxZMGXPQ8WQ0128MXQD7TnfHyK4oWoIJQ==}
@@ -6399,6 +6414,11 @@ snapshots:
     transitivePeerDependencies:
       - encoding
       - supports-color
+
+  '@marsidev/react-turnstile@1.6.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+    dependencies:
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
 
   '@napi-rs/wasm-runtime@0.2.12':
     dependencies:

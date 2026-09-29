@@ -10,10 +10,6 @@ import {
   useAdminContext,
   useReactBricksContext,
 } from 'react-bricks/astro'
-import {
-  GoogleReCaptchaProvider,
-  useGoogleReCaptcha,
-} from 'react-google-recaptcha-v3'
 import { useForm } from 'react-hook-form'
 import blockNames from '../../blockNames'
 import { textColors } from '../../colors'
@@ -29,13 +25,16 @@ import {
   createSubmissionError,
   FormSubmissionError,
 } from '../../shared/FormNewsletter/NewsletterUtils'
+import CaptchaProvider, {
+  useCaptcha,
+} from '../../shared/Captcha/CaptchaProvider'
 
 const NewsletterSubscribeForm: React.FC<{
   buttonText: types.TextValue
   formId: string
   resultOkText: string
 }> = ({ buttonText, formId, resultOkText }) => {
-  const { executeRecaptcha } = useGoogleReCaptcha()
+  const { executeCaptcha } = useCaptcha()
   const rbContext = useReactBricksContext()
 
   const { isAdmin } = useAdminContext()
@@ -49,29 +48,29 @@ const NewsletterSubscribeForm: React.FC<{
 
   const onSubmit = async ({ email, ...data }: any) => {
     try {
-      if (!executeRecaptcha) {
+      if (!executeCaptcha) {
         throw createSubmissionError(
-          'recaptchaUnavailable',
-          'reCAPTCHA is not available. Please reload the page and try again.'
+          'captchaUnavailable',
+          'CAPTCHA is not available. Please reload the page and try again.'
         )
       }
 
       let token: string | undefined
       try {
-        token = await executeRecaptcha('form_submit')
+        token = await executeCaptcha('form_submit')
       } catch (err) {
         console.log(err)
         throw createSubmissionError(
-          'recaptchaExecution',
-          'Failed to execute reCAPTCHA. Please try again.',
+          'captchaExecution',
+          'Failed to execute CAPTCHA. Please try again.',
           err
         )
       }
 
       if (!token) {
         throw createSubmissionError(
-          'recaptchaToken',
-          'Failed to verify reCAPTCHA token. Please try again.'
+          'captchaToken',
+          'Failed to verify CAPTCHA token. Please try again.'
         )
       }
 
@@ -227,6 +226,7 @@ const Newsletter: types.Brick<NewsletterProps> = ({
   resultOkText = `Thanks,you're all signed up!`,
 }) => {
   const reCaptchaKey = import.meta.env.PUBLIC_RECAPTCHA_KEY || ''
+  const turnstileSiteKey = import.meta.env.PUBLIC_TURNSTILE_SITE_KEY || ''
 
   return (
     <Section backgroundColor={backgroundColor}>
@@ -270,13 +270,16 @@ const Newsletter: types.Brick<NewsletterProps> = ({
             />
           </div>
           <div className="block items-center mt-3 sm:flex">
-            <GoogleReCaptchaProvider reCaptchaKey={reCaptchaKey}>
+            <CaptchaProvider
+              reCaptchaKey={reCaptchaKey}
+              turnstileSiteKey={turnstileSiteKey}
+            >
               <NewsletterSubscribeForm
                 buttonText={buttonText}
                 formId={formId}
                 resultOkText={resultOkText}
               />
-            </GoogleReCaptchaProvider>
+            </CaptchaProvider>
             <div>
               <RichText
                 propName="text2"
