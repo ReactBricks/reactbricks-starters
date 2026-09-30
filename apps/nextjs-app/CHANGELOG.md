@@ -1,5 +1,13 @@
 # @reactbricks/nextjs-app
 
+## 0.3.1
+
+### Patch Changes
+
+- Update to React Bricks version 5.4.0
+- Updated dependencies
+  - @reactbricks/reactbricks-ui-rsc@0.2.3
+
 ## 0.3.0
 
 ### Minor Changes
@@ -40,7 +48,7 @@
 
 ### Patch Changes
 
-- Update react-bricks dependency
+- Update to React Bricks version 5.4.0
 - Updated dependencies
   - @reactbricks/reactbricks-ui-rsc@0.1.1
 

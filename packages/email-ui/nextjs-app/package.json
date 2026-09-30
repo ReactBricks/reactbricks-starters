@@ -4,7 +4,7 @@
   "authors": [
     "Dario Ronzoni <dario@reactbricks.com>"
   ],
-  "version": "0.3.2",
+  "version": "0.3.3",
   "publishConfig": {
     "access": "public"
   },
@@ -28,7 +28,7 @@
   },
   "peerDependencies": {
     "react": "^19",
-    "react-bricks": "5.3.1",
+    "react-bricks": "5.4.0",
     "react-dom": "^19"
   },
   "dependencies": {

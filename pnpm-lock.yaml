@@ -52,8 +52,8 @@ importers:
         specifier: '>=19'
         version: 19.2.4
       react-bricks:
-        specifier: 5.3.0
-        version: 5.3.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4))
+        specifier: 5.4.0
+        version: 5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4))
       react-dom:
         specifier: '>=19'
         version: 19.2.4(react@19.2.4)
@@ -92,8 +92,8 @@ importers:
         specifier: ^19.2.0
         version: 19.2.4
       react-bricks:
-        specifier: 5.3.1
-        version: 5.3.1(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4))
+        specifier: 5.4.0
+        version: 5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4))
       react-dom:
         specifier: ^19.2.0
         version: 19.2.4(react@19.2.4)
@@ -150,8 +150,8 @@ importers:
         specifier: ^19.2.0
         version: 19.2.4
       react-bricks:
-        specifier: 5.3.1
-        version: 5.3.1(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4))
+        specifier: 5.4.0
+        version: 5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4))
       react-dom:
         specifier: ^19.2.0
         version: 19.2.4(react@19.2.4)
@@ -199,8 +199,8 @@ importers:
         specifier: ^19
         version: 19.2.4
       react-bricks:
-        specifier: 5.3.0
-        version: 5.3.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4))
+        specifier: 5.4.0
+        version: 5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4))
       react-dom:
         specifier: ^19
         version: 19.2.4(react@19.2.4)
@@ -245,8 +245,8 @@ importers:
         specifier: ^19
         version: 19.2.4
       react-bricks:
-        specifier: 5.3.1
-        version: 5.3.1(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4))
+        specifier: 5.4.0
+        version: 5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4))
       react-dom:
         specifier: ^19
         version: 19.2.4(react@19.2.4)
@@ -291,8 +291,8 @@ importers:
         specifier: ^19
         version: 19.2.4
       react-bricks:
-        specifier: 5.3.1
-        version: 5.3.1(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4))
+        specifier: 5.4.0
+        version: 5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4))
       react-dom:
         specifier: ^19
         version: 19.2.4(react@19.2.4)
@@ -362,8 +362,8 @@ importers:
         specifier: ^19
         version: 19.2.4
       react-bricks:
-        specifier: 5.3.0
-        version: 5.3.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4))
+        specifier: 5.4.0
+        version: 5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4))
       react-dom:
         specifier: ^19
         version: 19.2.4(react@19.2.4)
@@ -450,8 +450,8 @@ importers:
         specifier: ^19
         version: 19.2.4
       react-bricks:
-        specifier: 5.3.1
-        version: 5.3.1(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4))
+        specifier: 5.4.0
+        version: 5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4))
       react-dom:
         specifier: ^19
         version: 19.2.4(react@19.2.4)
@@ -544,8 +544,8 @@ importers:
         specifier: ^19
         version: 19.2.4
       react-bricks:
-        specifier: 5.3.1
-        version: 5.3.1(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4))
+        specifier: 5.4.0
+        version: 5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4))
       react-dom:
         specifier: ^19
         version: 19.2.4(react@19.2.4)
@@ -4482,14 +4482,8 @@ packages:
       react: ^16.14.0 || ^17 || ^18 || ^19
       react-dom: ^16.14.0 || ^17 || ^18 || ^19
 
-  react-bricks@5.3.0:
-    resolution: {integrity: sha512-RHf3IbqHrsl48/I3rqZyeF9wUESDpZiaBK2lGmOlvTEfwqhggg68sCy0cB0bZWiMdVB8LK6EoeZWf9DKa4S2MA==}
-    peerDependencies:
-      react: '>=18'
-      react-dom: '>=18'
-
-  react-bricks@5.3.1:
-    resolution: {integrity: sha512-yG2Nsvq7tcEjzx5xZv0/swTz17ap7qhKIUo8qkL7+HUhbnZ2ir8EooDHVBmb3cQamFvLoynvwVQWJRYOYI2sBA==}
+  react-bricks@5.4.0:
+    resolution: {integrity: sha512-nMEZMSGM5KM0JEGQ6uhgY+MGGHNCJgqIE8+noGgo0NiyrlVBYn2lrd6CGWgpKUpf4KX1Fk6VU8PiL4ivAcVlDQ==}
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
@@ -6470,7 +6464,7 @@ snapshots:
       '@react-aria/interactions': 3.27.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@react-aria/utils': 3.33.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@react-types/shared': 3.33.0(react@19.2.4)
-      '@swc/helpers': 0.5.19
+      '@swc/helpers': 0.5.23
       clsx: 2.1.1
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
@@ -6481,13 +6475,13 @@ snapshots:
       '@react-aria/utils': 3.33.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@react-stately/flags': 3.1.2
       '@react-types/shared': 3.33.0(react@19.2.4)
-      '@swc/helpers': 0.5.19
+      '@swc/helpers': 0.5.23
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
 
   '@react-aria/ssr@3.9.10(react@19.2.4)':
     dependencies:
-      '@swc/helpers': 0.5.19
+      '@swc/helpers': 0.5.23
       react: 19.2.4
 
   '@react-aria/utils@3.33.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
@@ -6496,7 +6490,7 @@ snapshots:
       '@react-stately/flags': 3.1.2
       '@react-stately/utils': 3.11.0(react@19.2.4)
       '@react-types/shared': 3.33.0(react@19.2.4)
-      '@swc/helpers': 0.5.19
+      '@swc/helpers': 0.5.23
       clsx: 2.1.1
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
@@ -6615,11 +6609,11 @@ snapshots:
 
   '@react-stately/flags@3.1.2':
     dependencies:
-      '@swc/helpers': 0.5.19
+      '@swc/helpers': 0.5.23
 
   '@react-stately/utils@3.11.0(react@19.2.4)':
     dependencies:
-      '@swc/helpers': 0.5.19
+      '@swc/helpers': 0.5.23
       react: 19.2.4
 
   '@react-types/shared@3.33.0(react@19.2.4)':
@@ -8014,7 +8008,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.1(@typescript-eslint/parser@8.56.1(eslint@9.39.3(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0)(eslint@9.39.3(jiti@2.6.1)))(eslint@9.39.3(jiti@2.6.1)):
+  eslint-module-utils@2.12.1(@typescript-eslint/parser@8.56.1(eslint@9.39.3(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.3(jiti@2.6.1)):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -8046,7 +8040,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.39.3(jiti@2.6.1)
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.1(@typescript-eslint/parser@8.56.1(eslint@9.39.3(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0)(eslint@9.39.3(jiti@2.6.1)))(eslint@9.39.3(jiti@2.6.1))
+      eslint-module-utils: 2.12.1(@typescript-eslint/parser@8.56.1(eslint@9.39.3(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.3(jiti@2.6.1))
       hasown: 2.0.2
       is-core-module: 2.16.1
       is-glob: 4.0.3
@@ -9715,62 +9709,7 @@ snapshots:
       react-overlays: 5.2.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       uncontrollable: 7.2.1(react@19.2.4)
 
-  react-bricks@5.3.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4)):
-    dependencies:
-      '@headlessui/react': 2.2.9(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      '@headlessui/tailwindcss': 0.2.2(tailwindcss@4.2.1)
-      '@tanstack/react-query': 5.90.21(react@19.2.4)
-      '@tanstack/react-query-devtools': 5.91.3(@tanstack/react-query@5.90.21(react@19.2.4))(react@19.2.4)
-      axios: 1.13.5
-      classnames: 2.5.1
-      clsx: 2.1.1
-      color: 5.0.3
-      date-fns: 3.6.0
-      html-to-image: 1.11.13
-      immer: 11.1.4
-      is-hotkey: 0.2.0
-      lodash.debounce: 4.0.8
-      p-limit: 7.3.0
-      rb-react-tiny-popover: 8.1.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      rb-tippyjs-react: 4.3.1(@babel/core@7.29.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      rc-switch: 4.1.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      react: 19.2.4
-      react-big-calendar: 1.19.4(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      react-dom: 19.2.4(react@19.2.4)
-      react-dropzone: 15.0.0(react@19.2.4)
-      react-error-boundary: 6.1.1(react@19.2.4)
-      react-hook-form: 7.71.2(react@19.2.4)
-      react-icons: 5.5.0(react@19.2.4)
-      react-inlinesvg: 4.2.0(react@19.2.4)
-      react-lazy-load-image-component: 1.6.3(react@19.2.4)
-      react-masonry-css: 1.0.16(react@19.2.4)
-      react-modal: 3.16.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      react-paginate: 8.3.0(react@19.2.4)
-      react-tag-autocomplete: 7.5.1(react@19.2.4)
-      react-toastify: 9.1.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
-      remark-gfm: 4.0.1
-      remark-parse: 11.0.0
-      remark-slate-transformer: 0.9.0(unified@11.0.5)
-      remark-stringify: 11.0.0
-      slate: 0.66.5
-      slate-history: 0.66.0(slate@0.66.5)
-      slate-react: 0.66.6(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(slate@0.66.5)
-      socket.io-client: 4.8.3
-      ts-md5: 1.3.1
-      unified: 11.0.5
-      uuid: 13.0.0
-      zustand: 5.0.11(@types/react@19.2.18)(immer@11.1.4)(react@19.2.4)(use-sync-external-store@1.6.0(react@19.2.4))
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@types/react'
-      - bufferutil
-      - debug
-      - supports-color
-      - tailwindcss
-      - use-sync-external-store
-      - utf-8-validate
-
-  react-bricks@5.3.1(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4)):
+  react-bricks@5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(tailwindcss@4.2.1)(use-sync-external-store@1.6.0(react@19.2.4)):
     dependencies:
       '@headlessui/react': 2.2.9(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@headlessui/tailwindcss': 0.2.2(tailwindcss@4.2.1)
