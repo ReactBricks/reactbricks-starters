@@ -1,5 +1,11 @@
 # @reactbricks/email-ui
 
+## 0.3.3
+
+### Patch Changes
+
+- Update to React Bricks version 5.4.0
+
 ## 0.3.2
 
 ### Patch Changes
@@ -28,7 +34,7 @@
 
 ### Patch Changes
 
-- Update react-bricks dependency
+- Update to React Bricks version 5.4.0
 
 ## 0.1.0
 

@@ -1,5 +1,11 @@
 # @reactbricks/reactbricks-ui-rsc
 
+## 0.2.3
+
+### Patch Changes
+
+- Update to React Bricks version 5.4.0
+
 ## 0.2.2
 
 ### Patch Changes
@@ -22,7 +28,7 @@
 
 ### Patch Changes
 
-- Update react-bricks dependency
+- Update to React Bricks version 5.4.0
 
 ## 0.1.0
 

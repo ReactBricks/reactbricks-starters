@@ -52,8 +52,8 @@ importers:
         specifier: '>=19'
         version: 19.2.6
       react-bricks:
-        specifier: 5.3.0
-        version: 5.3.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6))
+        specifier: 5.4.0
+        version: 5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6))
       react-dom:
         specifier: '>=19'
         version: 19.2.6(react@19.2.6)
@@ -95,8 +95,8 @@ importers:
         specifier: ^19.2.0
         version: 19.2.6
       react-bricks:
-        specifier: 5.3.1
-        version: 5.3.1(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6))
+        specifier: 5.4.0
+        version: 5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6))
       react-dom:
         specifier: ^19.2.0
         version: 19.2.6(react@19.2.6)
@@ -124,7 +124,7 @@ importers:
         version: 9.39.4(jiti@2.7.0)
       eslint-config-next:
         specifier: 16.3.5
-        version: 16.3.5(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3)
+        version: 16.3.5(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3)
       postcss:
         specifier: ^8.5.3
         version: 8.5.14
@@ -156,8 +156,8 @@ importers:
         specifier: ^19.2.0
         version: 19.2.6
       react-bricks:
-        specifier: 5.3.1
-        version: 5.3.1(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6))
+        specifier: 5.4.0
+        version: 5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6))
       react-dom:
         specifier: ^19.2.0
         version: 19.2.6(react@19.2.6)
@@ -205,8 +205,8 @@ importers:
         specifier: ^19
         version: 19.2.6
       react-bricks:
-        specifier: 5.3.0
-        version: 5.3.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6))
+        specifier: 5.4.0
+        version: 5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6))
       react-dom:
         specifier: ^19
         version: 19.2.6(react@19.2.6)
@@ -228,7 +228,7 @@ importers:
         version: 9.39.4(jiti@2.7.0)
       eslint-config-next:
         specifier: 16.1.6
-        version: 16.1.6(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3)
+        version: 16.1.6(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3)
       postcss:
         specifier: ^8.5.6
         version: 8.5.14
@@ -251,8 +251,8 @@ importers:
         specifier: ^19
         version: 19.2.6
       react-bricks:
-        specifier: 5.3.1
-        version: 5.3.1(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6))
+        specifier: 5.4.0
+        version: 5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6))
       react-dom:
         specifier: ^19
         version: 19.2.6(react@19.2.6)
@@ -297,8 +297,8 @@ importers:
         specifier: ^19
         version: 19.2.6
       react-bricks:
-        specifier: 5.3.1
-        version: 5.3.1(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6))
+        specifier: 5.4.0
+        version: 5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6))
       react-dom:
         specifier: ^19
         version: 19.2.6(react@19.2.6)
@@ -368,8 +368,8 @@ importers:
         specifier: ^19
         version: 19.2.6
       react-bricks:
-        specifier: 5.3.0
-        version: 5.3.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6))
+        specifier: 5.4.0
+        version: 5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6))
       react-dom:
         specifier: ^19
         version: 19.2.6(react@19.2.6)
@@ -456,8 +456,8 @@ importers:
         specifier: ^19
         version: 19.2.6
       react-bricks:
-        specifier: 5.3.1
-        version: 5.3.1(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6))
+        specifier: 5.4.0
+        version: 5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6))
       react-dom:
         specifier: ^19
         version: 19.2.6(react@19.2.6)
@@ -550,8 +550,8 @@ importers:
         specifier: ^19
         version: 19.2.6
       react-bricks:
-        specifier: 5.3.1
-        version: 5.3.1(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6))
+        specifier: 5.4.0
+        version: 5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6))
       react-dom:
         specifier: ^19
         version: 19.2.6(react@19.2.6)
@@ -4540,14 +4540,8 @@ packages:
       react: ^16.14.0 || ^17 || ^18 || ^19
       react-dom: ^16.14.0 || ^17 || ^18 || ^19
 
-  react-bricks@5.3.0:
-    resolution: {integrity: sha512-RHf3IbqHrsl48/I3rqZyeF9wUESDpZiaBK2lGmOlvTEfwqhggg68sCy0cB0bZWiMdVB8LK6EoeZWf9DKa4S2MA==}
-    peerDependencies:
-      react: '>=18'
-      react-dom: '>=18'
-
-  react-bricks@5.3.1:
-    resolution: {integrity: sha512-yG2Nsvq7tcEjzx5xZv0/swTz17ap7qhKIUo8qkL7+HUhbnZ2ir8EooDHVBmb3cQamFvLoynvwVQWJRYOYI2sBA==}
+  react-bricks@5.4.0:
+    resolution: {integrity: sha512-nMEZMSGM5KM0JEGQ6uhgY+MGGHNCJgqIE8+noGgo0NiyrlVBYn2lrd6CGWgpKUpf4KX1Fk6VU8PiL4ivAcVlDQ==}
     peerDependencies:
       react: '>=18'
       react-dom: '>=18'
@@ -6378,15 +6372,15 @@ snapshots:
 
   '@internationalized/date@3.12.1':
     dependencies:
-      '@swc/helpers': 0.5.21
+      '@swc/helpers': 0.5.23
 
   '@internationalized/number@3.6.6':
     dependencies:
-      '@swc/helpers': 0.5.21
+      '@swc/helpers': 0.5.23
 
   '@internationalized/string@3.2.8':
     dependencies:
-      '@swc/helpers': 0.5.21
+      '@swc/helpers': 0.5.23
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -6524,7 +6518,7 @@ snapshots:
 
   '@react-aria/focus@3.22.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
-      '@swc/helpers': 0.5.21
+      '@swc/helpers': 0.5.23
       react: 19.2.6
       react-aria: 3.48.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       react-dom: 19.2.6(react@19.2.6)
@@ -6532,7 +6526,7 @@ snapshots:
   '@react-aria/interactions@3.28.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
       '@react-types/shared': 3.34.0(react@19.2.6)
-      '@swc/helpers': 0.5.21
+      '@swc/helpers': 0.5.23
       react: 19.2.6
       react-aria: 3.48.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       react-dom: 19.2.6(react@19.2.6)
@@ -7997,33 +7991,13 @@ snapshots:
 
   escape-string-regexp@5.0.0: {}
 
-  eslint-config-next@16.1.6(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3):
-    dependencies:
-      '@next/eslint-plugin-next': 16.1.6
-      eslint: 9.39.4(jiti@2.7.0)
-      eslint-import-resolver-node: 0.3.10
-      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0))
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0))
-      eslint-plugin-jsx-a11y: 6.10.2(eslint@9.39.4(jiti@2.7.0))
-      eslint-plugin-react: 7.37.5(eslint@9.39.4(jiti@2.7.0))
-      eslint-plugin-react-hooks: 7.1.1(eslint@9.39.4(jiti@2.7.0))
-      globals: 16.4.0
-      typescript-eslint: 8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3)
-    optionalDependencies:
-      typescript: 5.9.3
-    transitivePeerDependencies:
-      - '@typescript-eslint/parser'
-      - eslint-import-resolver-webpack
-      - eslint-plugin-import-x
-      - supports-color
-
   eslint-config-next@16.1.6(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3):
     dependencies:
       '@next/eslint-plugin-next': 16.1.6
       eslint: 9.39.4(jiti@2.7.0)
       eslint-import-resolver-node: 0.3.10
-      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@9.39.4(jiti@2.7.0))
-      eslint-plugin-import: 2.32.0(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.4(jiti@2.7.0))
+      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0))
+      eslint-plugin-import: 2.32.0(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0))
       eslint-plugin-jsx-a11y: 6.10.2(eslint@9.39.4(jiti@2.7.0))
       eslint-plugin-react: 7.37.5(eslint@9.39.4(jiti@2.7.0))
       eslint-plugin-react-hooks: 7.1.1(eslint@9.39.4(jiti@2.7.0))
@@ -8037,13 +8011,13 @@ snapshots:
       - eslint-plugin-import-x
       - supports-color
 
-  eslint-config-next@16.3.5(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3):
+  eslint-config-next@16.3.5(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3):
     dependencies:
       '@next/eslint-plugin-next': 16.3.5(eslint@9.39.4(jiti@2.7.0))
       eslint: 9.39.4(jiti@2.7.0)
       eslint-import-resolver-node: 0.3.10
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@9.39.4(jiti@2.7.0))
-      eslint-plugin-import: 2.32.0(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.4(jiti@2.7.0))
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.4(jiti@2.7.0))
       eslint-plugin-jsx-a11y: 6.10.2(eslint@9.39.4(jiti@2.7.0))
       eslint-plugin-react: 7.37.5(eslint@9.39.4(jiti@2.7.0))
       eslint-plugin-react-hooks: 7.1.1(eslint@9.39.4(jiti@2.7.0))
@@ -8065,7 +8039,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0)):
+  eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0)):
     dependencies:
       '@nolyfill/is-core-module': 1.0.39
       debug: 4.4.3
@@ -8076,7 +8050,7 @@ snapshots:
       tinyglobby: 0.2.16
       unrs-resolver: 1.11.1
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0))
+      eslint-plugin-import: 2.32.0(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0))
     transitivePeerDependencies:
       - supports-color
 
@@ -8091,32 +8065,32 @@ snapshots:
       tinyglobby: 0.2.16
       unrs-resolver: 1.11.1
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.4(jiti@2.7.0))
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.4(jiti@2.7.0))
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.1(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0)):
+  eslint-module-utils@2.12.1(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.4(jiti@2.7.0)):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
       '@typescript-eslint/parser': 8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3)
       eslint: 9.39.4(jiti@2.7.0)
       eslint-import-resolver-node: 0.3.10
-      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0))
+      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@9.39.4(jiti@2.7.0))
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.12.1(eslint-import-resolver-node@0.3.10)(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.4(jiti@2.7.0)):
+  eslint-module-utils@2.12.1(eslint-import-resolver-node@0.3.10)(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0)):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
       eslint: 9.39.4(jiti@2.7.0)
       eslint-import-resolver-node: 0.3.10
-      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@9.39.4(jiti@2.7.0))
+      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0))
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0)):
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.4(jiti@2.7.0)):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.9
@@ -8127,7 +8101,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.39.4(jiti@2.7.0)
       eslint-import-resolver-node: 0.3.10
-      eslint-module-utils: 2.12.1(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0))
+      eslint-module-utils: 2.12.1(@typescript-eslint/parser@8.59.3(eslint@9.39.4(jiti@2.7.0))(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.4(jiti@2.7.0))
       hasown: 2.0.3
       is-core-module: 2.16.2
       is-glob: 4.0.3
@@ -8145,7 +8119,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-import@2.32.0(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.4(jiti@2.7.0)):
+  eslint-plugin-import@2.32.0(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0)):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.9
@@ -8156,7 +8130,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.39.4(jiti@2.7.0)
       eslint-import-resolver-node: 0.3.10
-      eslint-module-utils: 2.12.1(eslint-import-resolver-node@0.3.10)(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.4(jiti@2.7.0))
+      eslint-module-utils: 2.12.1(eslint-import-resolver-node@0.3.10)(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0)))(eslint@9.39.4(jiti@2.7.0))
       hasown: 2.0.3
       is-core-module: 2.16.2
       is-glob: 4.0.3
@@ -9796,7 +9770,7 @@ snapshots:
       '@internationalized/number': 3.6.6
       '@internationalized/string': 3.2.8
       '@react-types/shared': 3.34.0(react@19.2.6)
-      '@swc/helpers': 0.5.21
+      '@swc/helpers': 0.5.23
       aria-hidden: 1.2.6
       clsx: 2.1.1
       react: 19.2.6
@@ -9825,62 +9799,7 @@ snapshots:
       react-overlays: 5.2.1(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       uncontrollable: 7.2.1(react@19.2.6)
 
-  react-bricks@5.3.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6)):
-    dependencies:
-      '@headlessui/react': 2.2.10(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
-      '@headlessui/tailwindcss': 0.2.2(tailwindcss@4.3.0)
-      '@tanstack/react-query': 5.100.10(react@19.2.6)
-      '@tanstack/react-query-devtools': 5.100.10(@tanstack/react-query@5.100.10(react@19.2.6))(react@19.2.6)
-      axios: 1.16.1
-      classnames: 2.5.1
-      clsx: 2.1.1
-      color: 5.0.3
-      date-fns: 3.6.0
-      html-to-image: 1.11.13
-      immer: 11.1.8
-      is-hotkey: 0.2.0
-      lodash.debounce: 4.0.8
-      p-limit: 7.3.0
-      rb-react-tiny-popover: 8.1.7(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
-      rb-tippyjs-react: 4.3.1(@babel/core@7.29.0)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
-      rc-switch: 4.1.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
-      react: 19.2.6
-      react-big-calendar: 1.19.4(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
-      react-dom: 19.2.6(react@19.2.6)
-      react-dropzone: 15.0.0(react@19.2.6)
-      react-error-boundary: 6.1.1(react@19.2.6)
-      react-hook-form: 7.75.0(react@19.2.6)
-      react-icons: 5.6.0(react@19.2.6)
-      react-inlinesvg: 4.4.1(react@19.2.6)
-      react-lazy-load-image-component: 1.6.3(react@19.2.6)
-      react-masonry-css: 1.0.16(react@19.2.6)
-      react-modal: 3.16.3(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
-      react-paginate: 8.3.0(react@19.2.6)
-      react-tag-autocomplete: 7.5.1(react@19.2.6)
-      react-toastify: 9.1.3(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
-      remark-gfm: 4.0.1
-      remark-parse: 11.0.0
-      remark-slate-transformer: 0.9.0(unified@11.0.5)
-      remark-stringify: 11.0.0
-      slate: 0.66.5
-      slate-history: 0.66.0(slate@0.66.5)
-      slate-react: 0.66.6(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(slate@0.66.5)
-      socket.io-client: 4.8.3
-      ts-md5: 1.3.1
-      unified: 11.0.5
-      uuid: 13.0.2
-      zustand: 5.0.13(@types/react@19.2.18)(immer@11.1.8)(react@19.2.6)(use-sync-external-store@1.6.0(react@19.2.6))
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@types/react'
-      - bufferutil
-      - debug
-      - supports-color
-      - tailwindcss
-      - use-sync-external-store
-      - utf-8-validate
-
-  react-bricks@5.3.1(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6)):
+  react-bricks@5.4.0(@babel/core@7.29.0)(@types/react@19.2.18)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(tailwindcss@4.3.0)(use-sync-external-store@1.6.0(react@19.2.6)):
     dependencies:
       '@headlessui/react': 2.2.10(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       '@headlessui/tailwindcss': 0.2.2(tailwindcss@4.3.0)
@@ -10040,7 +9959,7 @@ snapshots:
       '@internationalized/number': 3.6.6
       '@internationalized/string': 3.2.8
       '@react-types/shared': 3.34.0(react@19.2.6)
-      '@swc/helpers': 0.5.21
+      '@swc/helpers': 0.5.23
       react: 19.2.6
       use-sync-external-store: 1.6.0(react@19.2.6)
 
